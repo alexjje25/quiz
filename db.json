@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Alex Santos",
+      "email": "alex.jj25@gmail.com"
+    },
+    {
+      "id": 3,
+      "nome": "Alex2",
+      "email": "alex.jje30@gmail.com"
+    },
+    {
+      "nome": "Fred",
+      "email": "Flintstone",
+      "id": 4
+    },
+    {
+      "nome": "Fred",
+      "email": "Flintstone",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "email": "alex.jje25@gmail.cm",
+      "name": "Alex",
+      "id": 7
+    },
+    {
+      "email": "alex.jje25@gmail.cm",
+      "name": "Alex",
+      "id": 8
+    }
+  ]
+}
