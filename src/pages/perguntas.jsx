@@ -25,7 +25,7 @@ export default function Regulamento() {
     return arr;
   }
 
-  let isCorrectAux=0
+  let isCorrectAux=1
   const handleClick = (isCorrect) => {
     if (isCorrect) isCorrectAux++
     if (index === 3) {
