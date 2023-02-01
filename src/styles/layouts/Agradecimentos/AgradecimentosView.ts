@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PerguntasView = styled.main`
+export const AgradecimentosView = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;

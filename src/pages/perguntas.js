@@ -23,32 +23,44 @@ export default function Regulamento() {
     }
     // Retornando array com aleatoriedade
     return arr;
-  }
+  };
 
-  let isCorrectAux=0
+  let isCorrectAux = 1;
   const handleClick = (isCorrect) => {
-    if (isCorrect) isCorrectAux++
+    if (isCorrect) isCorrectAux++;
     if (index === 3) {
-      axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
-        correctAnswersCount: isCorrectAux
-      })
-    router.push('/')
+      axios.patch(
+        `http://localhost:3001/users/${localStorage.getItem("id:quiz")}`,
+        {
+          correctAnswersCount: isCorrectAux,
+        }
+      );
+      router.push("/");
     }
-    setClicked(true)
+    setClicked(true);
     setTimeout(() => {
-      setClicked(false)
-      setIndex(index+1)
+      setClicked(false);
+      setIndex(index + 1);
     }, 1000);
-  }
+  };
+
+  // const handleClick = () => {
+  //   if (index === 3) router.push("/");
+  //   setClicked(true);
+  //   setTimeout(() => {
+  //     setClicked(false);
+  //     setIndex(index + 1);
+  //   }, 1000);
+  // };
 
   const fetch = async () => {
-    const { data } = await axios.get('http://localhost:3001/questions')
-    setQuestions(shuffleArray(data.OpCo).slice(0, 4))
-    console.log(shuffleArray(data.OpCo).slice(0, 4))
-  }
+    const { data } = await axios.get("http://localhost:3001/questions");
+    setQuestions(shuffleArray(data.OpCo).slice(0, 4));
+    console.log(shuffleArray(data.OpCo).slice(0, 4));
+  };
   useEffect(() => {
-    fetch()
-  }, [])
+    fetch();
+  }, []);
 
   return (
     <PerguntasView>
@@ -96,7 +108,7 @@ export default function Regulamento() {
       <div
         style={{
           position: "absolute",
-          width: "35%",
+          width: "100%",
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
@@ -106,18 +118,31 @@ export default function Regulamento() {
         <div className="main">
           <h2>Regulamento</h2>
           <h1>
-            {index+1} - {questions[index]?.title}
+            {index + 1} - {questions[index]?.title}
           </h1>
         </div>
         <div className="content">
-          {questions[index]?.answers
-            ?.map(answer => (
-              <div key={answer} className="questionA" onClick={() => handleClick(answer.isCorrect)}>
-                <h4>{answer.letter}</h4>
-                <div className="question" style={{ backgroundColor: clicked ? answer.isCorrect ? "#1DCB34" : '#FF3939' : '' }}>{answer.label}</div>
+          {questions[index]?.answers?.map((answer) => (
+            <div
+              key={answer}
+              className="questionA"
+              onClick={() => handleClick()}
+            >
+              <h4>{answer.letter}</h4>
+              <div
+                className="question"
+                style={{
+                  backgroundColor: clicked
+                    ? answer.isCorrect
+                      ? "#1DCB34"
+                      : "#FF3939"
+                    : "",
+                }}
+              >
+                {answer.label} <p>teste</p>
               </div>
-            ))
-          }
+            </div>
+          ))}
         </div>
       </div>
     </PerguntasView>

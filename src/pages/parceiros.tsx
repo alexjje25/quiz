@@ -2,7 +2,7 @@ import { RegulamentoView } from "@/styles/layouts/Regulamento/RegulamentoView";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-export default function Regulamento() {
+export default function Parceiros() {
   const router = useRouter();
 
   return (
@@ -40,14 +40,10 @@ export default function Regulamento() {
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
-          paddingLeft:"10px",
+          paddingLeft: "10px",
         }}
       >
-        <h2>Regulamento</h2>
-        <h1>
-        O game consiste em o participante acertar as 4 perguntas selecionadas pelo sistema aleatoriamente.
-        </h1>
-        <button onClick={() => router.push('/selecao-grupo')}>CONTINUAR</button>
+        <img src="/MARCAS.png" alt="Minha Figura" style={{ width: "800px" }} />
       </div>
     </RegulamentoView>
   );
