@@ -32,6 +32,252 @@
       "email": "alex.jje25@gmail.cm",
       "name": "Alex",
       "id": 8
+    },
+    {
+      "email": "",
+      "name": "",
+      "id": 9
+    },
+    {
+      "email": "testeId@gmail.com",
+      "name": "testeId",
+      "id": 10
+    },
+    {
+      "correctAnswersCount": false,
+      "id": 11
+    },
+    {
+      "correctAnswersCount": false,
+      "id": 12
+    },
+    {
+      "email": "test1",
+      "name": "test1",
+      "id": 13,
+      "correctAnswersCount": true
+    },
+    {
+      "email": "test2",
+      "name": "test2",
+      "id": 14,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "test4",
+      "name": "test4",
+      "id": 15,
+      "correctAnswersCount": 0
+    },
+    {
+      "email": "teste5",
+      "name": "teste5",
+      "id": 16,
+      "correctAnswersCount": 1
     }
-  ]
+  ],
+  "questions": {
+    "OpCo": [
+      {
+        "title": "Como realizo a exclusão de HCPs e HCOs no Veeva?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Veeva Online",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Módulo de Planejamento",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Minhas Contas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual tipo de registo de evento deve ser criado para um evento sem speaker?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Evento Pai",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Evento GSK",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Evento Simples",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "O QR Code ficará disponível por quanto tempo após a finalização do evento?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não há um tempo determinado",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Um período de até 24h",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Um período de até 12h",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "No tipo de registro Evento GSK, qual é o status que permite a realização do evento?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Aprovado",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Solicitado",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Confirmado",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "O aprovador do evento deve ser incluído em Membros da equipe?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Sim",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Depende do tipo de registro do evento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual procedimento para atualização do consentimento para e-mails e whatsapp?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "1- Não é necessário registrar o opt-out do e-mail e whatsapp antigos 2- Cadastrar novo e-mail e whatsapp 3- Capturar novo opt-in",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "1- Registrar o opt-out do e-mail e whatsapp antigos 2- Cadastrar novo e-mail e whatsapp 3- Capturar novo opt-in",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "1- Cadastrar novo e-mail e whatsapp 2- Capturar novo opt-in 3- Registrar o opt-out do e-mail e whatsapp antigos ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "A assinatura do HCP é obrigatória para captura de consentimento em visitas presenciais?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Sim",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "O Rep pode digitar o CRM do HCP no campo id de consentimento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Em caso de carro GSK danificado, posso usar veículo próprio para trabalhar?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não, devo comunicar o setor de frota que providenciará o conserto e um carro provisório.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Sim, até que o carro da GSK esteja pronto para uso",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Sim, pelo período máximo de 1 mês",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais dias posso abastecer meu veículo de trabalho?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Segunda a sexta, com exceção de feriados nacionais.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Qualquer dia",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Somente finais de semana e feriado.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quando o PMT precisa ser revisado?",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Trimestralmente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "No mínimo uma vez ao ano, quando houver mudança de dados cadastrais, ajuste de roteiros ou em mudança de território do colaborador",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Mensalmente",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
 }

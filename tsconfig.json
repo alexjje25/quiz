@@ -24,6 +24,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/coleta-dados.js", "src/pages/coleta-dados.js", "src/pages/perguntas.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/coleta-dados.js", "src/pages/coleta-dados.js", "src/pages/perguntas.jsx"],
   "exclude": ["node_modules"]
 }

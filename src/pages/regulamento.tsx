@@ -47,7 +47,7 @@ export default function Regulamento() {
         <h1>
         O game consiste em o participante acertar as 4 perguntas selecionadas pelo sistema aleatoriamente.
         </h1>
-        <button onClick={() => router.push('/regulamento')}>CONTINUAR</button>
+        <button onClick={() => router.push('/coleta-dados')}>CONTINUAR</button>
       </div>
     </RegulamentoView>
   );
