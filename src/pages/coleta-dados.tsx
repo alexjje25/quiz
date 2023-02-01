@@ -18,17 +18,15 @@ export default function ColetaDados() {
 
   console.log(name);
   const handleSubmit = async () => {
-
     try {
-      
       axios.post("http://localhost:3001/users", {
         email,
-        name
+        name,
       })
-      .then(function (response) {
-        console.log(response);
-        console.log('edu certo')
-      })
+        .then(function (response) {
+          localStorage.setItem('id:quiz', response.data.id)
+          router.push('perguntas')
+        })
     } catch (error) {
       console.log(error);
     }
@@ -82,7 +80,7 @@ export default function ColetaDados() {
           }}
         >
           <input style={{ height: "50px" }} type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome" />
-          <input style={{ height: "50px" }} type="text" value={email} onChange={(e) => setEmail(e.target.value)}placeholder="Email" />
+          <input style={{ height: "50px" }} type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
           <button onClick={handleSubmit}>teste</button>
         </div>
       </div>
