@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PerguntasView = styled.main`
+export const AgradecimentosView = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +84,7 @@ export const PerguntasView = styled.main`
     align-items: self-start;
   }
   .content{
-    width: 100%;
+    width: 64%;
   }
   .questionA{
     display: flex;

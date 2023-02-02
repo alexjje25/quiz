@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PerguntasView = styled.main`
+export const ParceirosView = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,16 +21,6 @@ export const PerguntasView = styled.main`
   }
   .Imagem3 {
     position: absolute;
-  }
-
-  .TEEEE{
-    position: absolute;
-    margin-top: -580px;
-    padding-right: 341px;
-  }
-  .img2{
-    width: 10px;
-    height: 10px;
   }
 
   p{
@@ -54,59 +44,25 @@ export const PerguntasView = styled.main`
 }
 
   h1 {
-    font-family: Poppins;
     /* position: absolute; */
     /* UI Properties */
-       letter-spacing: 0px;
+    text-align: center;
+    font-family: Poppins;
+    letter-spacing: 0px;
     color: #72635D;
     opacity: 1;
-    width: 678px;
-    font-size: 22px;
-    margin-top: -4px;
+    width: 549px;
+    font-size: 27px;
   }
 
   h2 {
     /* UI Properties */
+    text-align: center;
     font-family: Poppins;
     letter-spacing: 0px;
     color: #17717d;
     opacity: 1;
     text-align: center;
     font-size: 16px;
-    padding-left: 1px;
-    
   }
-
-  .main{
-    margin-top: -18px; 
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-  }
-  .content{
-    width: 100%;
-  }
-  .questionA{
-    display: flex;
-    justify-content: space-between;
-    line-height: 107px;
-    height: 107px;
-    cursor: pointer;
-    margin-top: 13px;
-    
-  }
-  .question{
-    background: #F0EFED;
-    width: 88%;
-    border-radius: 23px;
-  }
-  h4{
-    font-size: 45px;
-    font-family: sans-serif;
-    font-weight: 900;
-    color: #17717D;
-    margin-top: 3px;
-  }
-
-
 `;

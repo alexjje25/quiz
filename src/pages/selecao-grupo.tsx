@@ -45,8 +45,8 @@ export default function SelecaoGrupo() {
       >
         <h1>Qual grupo você participa:</h1>
         <div style={{display:'flex', gap:'40px', width:'515px', marginTop:'18px'}}>
-          <button onClick={() => router.push("/regulamento")}>TIME DEMANDA</button>
-          <button onClick={() => router.push("/regulamento")}>TIME COMERCIAL</button>
+          <button onClick={() => router.push("/coleta-dados")}>TIME DEMANDA</button>
+          <button onClick={() => router.push("/coleta-dados")}>TIME COMERCIAL</button>
         </div>
       </div>
     </SelecaoGrupoView>
