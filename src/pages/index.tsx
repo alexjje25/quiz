@@ -28,10 +28,10 @@ export default function Home() {
         alt="Minha Figura"
         className="Imagem2"
         style={{
-          width: "1166px",
+          width: "1146px",
           height: "608px",
-          paddingLeft: "108px",
-          paddingTop: "55px",
+          paddingLeft: "116px",
+          paddingTop: "63px",
           
         }}
       />
@@ -42,8 +42,8 @@ export default function Home() {
         className="Imagem2"
         style={{
           width: "1060px",
-          height: "588px",
-          paddingLeft: "151px",
+          height: "505px",
+          paddingLeft: "158px",
           paddingTop: "4px",
           paddingRight: "44px",
         }}

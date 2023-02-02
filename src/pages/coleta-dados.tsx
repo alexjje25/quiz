@@ -4,7 +4,9 @@ import { ColetaDadosView } from "@/styles/layouts/ColetaDados/ColetaDadosView";
 import axios from "axios";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+
 
 interface person {
   name: string;
@@ -13,40 +15,34 @@ interface person {
 
 export default function ColetaDados() {
   const router = useRouter();
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [team, setTeam] = useState('comercial')
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
 
+  console.log(name);
   const handleSubmit = async () => {
-    if (name === "" && email === "") {
+    if(name === "" && email === "") {
       alert('Preencha os Dados corretamente');
+    }
+    if(email.search("@")==-1){
+      alert('Digite o email corretamente');
     }
     else
 
-      try {
-        axios.post("http://localhost:3001/users", {
+    try {
+      axios
+        .post("http://localhost:3001/users", {
           email,
           name,
-          team
         })
-          .then(function (response) {
-            localStorage.setItem('id:quiz', response.data.id)
-            router.push('perguntas')
-          })
-          .then(function (response) {
-            // @ts-ignore
-            localStorage.setItem("id:quiz", response?.data.id);
-            router.push("perguntas");
-          });
-      } catch (error) {
-        console.log(error);
-      }
+        .then(function (response) {
+          localStorage.setItem("id:quiz", response.data.id);
+          router.push("perguntas");
+        });
+    } catch (error) {
+      console.log(error);
+    }
+    console.log("to auqi");
   };
-
-  useEffect(() => {
-    console.log(team)
-  }, [team])
-
 
   return (
     <ColetaDadosView>
@@ -95,13 +91,23 @@ export default function ColetaDados() {
             alignItems: 'center'
           }}
         >
-          <input style={{ height: "50px" }} type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome" />
-          <input style={{ height: "50px" }} type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
-          <div>
-            <button className='button' style={{ width: 210, marginRight: 95 }} onClick={() => setTeam('demanda')} disabled={team !== 'comercial'}>Time<br />Demanda</button>
-            <button className='button' style={{ width: 210 }} onClick={() => setTeam('comercial')} disabled={team !== 'demanda'}>{`Time\nComercial`}</button>
-          </div>
-          <button onClick={handleSubmit}>teste</button>
+          <input
+            className="input"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Nome"
+            required
+          />
+          <input
+            
+            type="text"
+            className="input"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+          />
+          <button onClick={handleSubmit}>JOGAR</button>
         </div>
       </div>
     </ColetaDadosView>

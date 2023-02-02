@@ -39,8 +39,17 @@ export default function Regulamento() {
     if (index === 3) {
       axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
         correctAnswersCount: isCorrectAux
+        
       })
+      if(isCorrect === 4){
+        router.push('/coleta-dados')
+      }
       // router.push('/')
+    }
+    
+
+    if(isCorrectAux === 4){
+      router.push('/agradecimento')
     }
     setClicked(true)
     setTimeout(() => {
@@ -94,7 +103,7 @@ export default function Regulamento() {
       <div
         style={{
           position: "absolute",
-          width: "35%",
+          width: "65%",
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
@@ -115,11 +124,12 @@ export default function Regulamento() {
                 {
                   clicked ?
                   answer.isCorrect
-                    ? <h2 style={{ position: 'absolute', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '20px', display: 'flex', alignItems: 'center', padding: '10px', borderRadius: '10px' }}>CORRETO</h2>
-                    : <h2 style={{ position: 'absolute', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '20px', display: 'flex', alignItems: 'center', padding: '10px', borderRadius: '10px' }}>INCORRETO</h2>
+                    ? <h2 className='respost' style={{ position: 'absolute', marginLeft:'175px', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '45px', display: 'flex',  width:'180px', alignItems: 'center', paddingLeft:'45px', borderRadius: '5px',fontSize:'26px', color:'#1DCB34', marginTop:'-1px'}}>CORRETO!</h2>
+                    : <h2 className='respost' style={{ position: 'absolute', marginLeft:'175px', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '45px', display: 'flex',  width:'182px', alignItems: 'center', paddingLeft:'43px', borderRadius: '5px',fontSize:'26px', color:'#FF3939', marginTop:'-1px'}}>INCORRETO</h2>
                     : null
                 }
                 <div className="question" style={{ backgroundColor: clicked ? answer.isCorrect ? "#1DCB34" : '#FF3939' : '' }}>{answer.label}</div>
+                
               </div>
             ))
           }

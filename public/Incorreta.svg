@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="483" height="130" viewBox="0 0 483 130">
+  <defs>
+    <filter id="Retângulo_46" x="0" y="0" width="483" height="130" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_58" data-name="Grupo 58" transform="translate(-855.5 -777.5)">
+    <g transform="matrix(1, 0, 0, 1, 855.5, 777.5)" filter="url(#Retângulo_46)">
+      <rect id="Retângulo_46-2" data-name="Retângulo 46" width="432" height="79" rx="14" transform="translate(25.5 15.5)" fill="#fff"/>
+    </g>
+    <text id="INCORRETA_" data-name="INCORRETA!" transform="translate(934 802)" fill="#ff3939" font-size="52" font-family="AkzidenzGrotesk-Black, Akzidenz Grotesk Roman" font-weight="800"><tspan x="-162" y="50">INCORRETA!</tspan></text>
+  </g>
+</svg>

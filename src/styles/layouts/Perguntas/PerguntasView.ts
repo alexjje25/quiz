@@ -25,12 +25,16 @@ export const PerguntasView = styled.main`
 
   .TEEEE{
     position: absolute;
-    margin-top: -580px;
-    padding-right: 341px;
+    margin-top: -590px;
+    /* padding-right: -68px; */
+    padding-left: 118px;
   }
   .img2{
     width: 10px;
     height: 10px;
+  }
+  .respost{
+    box-shadow: 0px 10px 17px #00000029;  
   }
 
   p{
