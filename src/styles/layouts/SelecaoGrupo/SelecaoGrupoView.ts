@@ -8,6 +8,13 @@ export const SelecaoGrupoView = styled.main`
   width: 100%;
   height: 100%;
 
+  button:disabled {
+    background: #FF7C00;
+  }
+  .button {
+    background-color: gray;
+  }
+
   .Imagem1 {
     top: 0;
     left: -47px;

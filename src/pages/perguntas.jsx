@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import CustomizedSteppers from "@/components/Progress/Progress";
 import { PerguntasView } from "@/styles/layouts/Perguntas/PerguntasView";
 import axios from "axios";
 
@@ -8,10 +9,17 @@ import { useEffect, useState } from "react";
 
 export default function Regulamento() {
   const router = useRouter();
-  const [show, setShow] = useState(true);
+  const [team, setTeam] = useState('');
   const [clicked, setClicked] = useState(false);
   const [index, setIndex] = useState(0);
   const [questions, setQuestions] = useState([]);
+
+  const getTeam = async () => {
+    const { data: { team } } = await axios.get(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`)
+    setTeam(team)
+    return team
+  }
+  getTeam()
 
   const shuffleArray = (arr) => {
     // Loop em todos os elementos
@@ -32,7 +40,7 @@ export default function Regulamento() {
       axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
         correctAnswersCount: isCorrectAux
       })
-    router.push('/')
+      // router.push('/')
     }
     setClicked(true)
     setTimeout(() => {
@@ -80,17 +88,7 @@ export default function Regulamento() {
         }}
       />
       <div className="TEEEE">
-        <img
-          src="/progress.png"
-          alt="Progress"
-          className="Imagem2"
-          style={{
-            width: "270px",
-            height: "26px",
-            paddingLeft: "142px",
-            paddingRight: "44px",
-          }}
-        />
+        <CustomizedSteppers index={index} />
       </div>
 
       <div
@@ -103,8 +101,8 @@ export default function Regulamento() {
           paddingLeft: "10px",
         }}
       >
-        <div className="main">
-          <h2>Regulamento</h2>
+        <div className="main" style={{ marginTop: '0rem' }}>
+          <h2>{team}</h2>
           <h1>
             {index+1} - {questions[index]?.title}
           </h1>
@@ -114,6 +112,13 @@ export default function Regulamento() {
             ?.map(answer => (
               <div key={answer} className="questionA" onClick={() => handleClick(answer.isCorrect)}>
                 <h4>{answer.letter}</h4>
+                {
+                  clicked ?
+                  answer.isCorrect
+                    ? <h2 style={{ position: 'absolute', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '20px', display: 'flex', alignItems: 'center', padding: '10px', borderRadius: '10px' }}>CORRETO</h2>
+                    : <h2 style={{ position: 'absolute', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '20px', display: 'flex', alignItems: 'center', padding: '10px', borderRadius: '10px' }}>INCORRETO</h2>
+                    : null
+                }
                 <div className="question" style={{ backgroundColor: clicked ? answer.isCorrect ? "#1DCB34" : '#FF3939' : '' }}>{answer.label}</div>
               </div>
             ))

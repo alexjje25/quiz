@@ -85,7 +85,6 @@ export const PerguntasView = styled.main`
   }
   .content{
     width: 100%;
-    padding-top: 110px;
   }
   .questionA{
     display: flex;
