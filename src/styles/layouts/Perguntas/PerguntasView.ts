@@ -13,7 +13,7 @@ export const PerguntasView = styled.main`
     left: -47px;
     /* margin-top: 36px; */
     width: 1291px;
-    height: 594px;
+    height: 635px;
     position: relative;
   }
   .Imagem2 {
@@ -25,7 +25,7 @@ export const PerguntasView = styled.main`
 
   .TEEEE{
     position: absolute;
-    margin-top: -590px;
+    margin-top: -612px;
     /* padding-right: -68px; */
     padding-left: 118px;
   }
@@ -101,7 +101,7 @@ export const PerguntasView = styled.main`
   }
   .question{
     background: #F0EFED;
-    width: 88%;
+    width: 90%;
     border-radius: 23px;
   }
   h4{
@@ -110,6 +110,7 @@ export const PerguntasView = styled.main`
     font-weight: 900;
     color: #17717D;
     margin-top: 3px;
+    padding-left: 35px;
   }
 
 

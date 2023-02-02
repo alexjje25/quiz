@@ -89,10 +89,10 @@ export default function Regulamento() {
         alt="Minha Figura"
         className="Imagem2"
         style={{
-          width: "1180px",
-          height: "608px",
-          paddingLeft: "142px",
-          paddingTop: "64px",
+          width: "1247px",
+          height: "630px",
+          paddingLeft: "180px",
+          paddingTop: "79px",
           paddingRight: "44px",
         }}
       />
@@ -103,11 +103,11 @@ export default function Regulamento() {
       <div
         style={{
           position: "absolute",
-          width: "65%",
+          width: "53%",
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
-          paddingLeft: "10px",
+          paddingLeft: "19px",
         }}
       >
         <div className="main" style={{ marginTop: '0rem' }}>
@@ -116,7 +116,7 @@ export default function Regulamento() {
             {index+1} - {questions[index]?.title}
           </h1>
         </div>
-        <div className="content">
+        <div className="content" style={{paddingLeft:'113px'}}>
           {questions[index]?.answers
             ?.map(answer => (
               <div key={answer} className="questionA" onClick={() => handleClick(answer.isCorrect)}>
@@ -124,8 +124,8 @@ export default function Regulamento() {
                 {
                   clicked ?
                   answer.isCorrect
-                    ? <h2 className='respost' style={{ position: 'absolute', marginLeft:'175px', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '45px', display: 'flex',  width:'180px', alignItems: 'center', paddingLeft:'45px', borderRadius: '5px',fontSize:'26px', color:'#1DCB34', marginTop:'-1px'}}>CORRETO!</h2>
-                    : <h2 className='respost' style={{ position: 'absolute', marginLeft:'175px', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '45px', display: 'flex',  width:'182px', alignItems: 'center', paddingLeft:'43px', borderRadius: '5px',fontSize:'26px', color:'#FF3939', marginTop:'-1px'}}>INCORRETO</h2>
+                    ? <h2 className='respost' style={{ position: 'absolute', marginLeft:'215px', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '45px', display: 'flex',  width:'180px', alignItems: 'center', paddingLeft:'45px', borderRadius: '5px',fontSize:'26px', color:'#1DCB34', marginTop:'-1px'}}>CORRETO!</h2>
+                    : <h2 className='respost' style={{ position: 'absolute', marginLeft:'215px', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '45px', display: 'flex',  width:'182px', alignItems: 'center', paddingLeft:'43px', borderRadius: '5px',fontSize:'26px', color:'#FF3939', marginTop:'-1px'}}>INCORRETO</h2>
                     : null
                 }
                 <div className="question" style={{ backgroundColor: clicked ? answer.isCorrect ? "#1DCB34" : '#FF3939' : '' }}>{answer.label}</div>
