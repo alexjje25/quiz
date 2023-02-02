@@ -1,47 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
-
 import { ColetaDadosView } from "@/styles/layouts/ColetaDados/ColetaDadosView";
 import axios from "axios";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-
-
-interface person {
-  name: string;
-  email: string;
-}
-
 export default function ColetaDados() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
 
-  console.log(name);
   const handleSubmit = async () => {
-    if(name === "" && email === "") {
+    if (name === "" && email === "") {
       alert('Preencha os Dados corretamente');
     }
-    if(email.search("@")==-1){
+    if (email.search("@") == -1) {
       alert('Digite o email corretamente');
     }
     else
-
-    try {
-      axios
-        .post("http://localhost:3001/users", {
-          email,
-          name,
-        })
-        .then(function (response) {
-          localStorage.setItem("id:quiz", response.data.id);
-          router.push("perguntas");
-        });
-    } catch (error) {
-      console.log(error);
-    }
-    console.log("to auqi");
+      try {
+        axios
+          .post("http://localhost:3001/users", {
+            email,
+            name,
+            team: localStorage.getItem('team')
+          })
+          .then(function (response) {
+            localStorage.setItem("id:quiz", response.data.id);
+            router.push("perguntas");
+          });
+      } catch (error) {
+        console.log(error);
+      }
   };
 
   return (
@@ -100,7 +90,7 @@ export default function ColetaDados() {
             required
           />
           <input
-            
+
             type="text"
             className="input"
             value={email}

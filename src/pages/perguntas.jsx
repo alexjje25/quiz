@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
+let isCorrectAux=0
 export default function Regulamento() {
   const router = useRouter();
   const [team, setTeam] = useState('');
@@ -33,23 +34,21 @@ export default function Regulamento() {
     return arr;
   }
 
-  let isCorrectAux=1
   const handleClick = (isCorrect) => {
+    console.log(isCorrect)
     if (isCorrect) isCorrectAux++
+    console.log(isCorrectAux)
     if (index === 3) {
       axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
         correctAnswersCount: isCorrectAux
-        
       })
-      if(isCorrect === 4){
-        router.push('/coleta-dados')
+      if(isCorrectAux >= 4) {
+        router.push('/agradecimento');
+      }
+      if(isCorrectAux < 4) {
+        router.push('/')
       }
       // router.push('/')
-    }
-    
-
-    if(isCorrectAux === 4){
-      router.push('/agradecimento')
     }
     setClicked(true)
     setTimeout(() => {
@@ -128,7 +127,7 @@ export default function Regulamento() {
                     : <h2 className='respost' style={{ position: 'absolute', marginLeft:'215px', transform: 'translate(13rem, 1.5rem)', backgroundColor: "#fff", height: '45px', display: 'flex',  width:'182px', alignItems: 'center', paddingLeft:'43px', borderRadius: '5px',fontSize:'26px', color:'#FF3939', marginTop:'-1px'}}>INCORRETO</h2>
                     : null
                 }
-                <div className="question" style={{ backgroundColor: clicked ? answer.isCorrect ? "#1DCB34" : '#FF3939' : '' }}>{answer.label}</div>
+                <div className="question" style={{ backgroundColor: clicked ? answer.isCorrect ? "#1DCB34" : '#FF3939' : '' }}>{answer.label}{answer.isCorrect ? 'aqui' : 'não'}</div>
                 
               </div>
             ))
