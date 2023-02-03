@@ -2,10 +2,11 @@
 import CustomizedSteppers from "@/components/Progress/Progress";
 import { PerguntasView } from "@/styles/layouts/Perguntas/PerguntasView";
 import axios from "axios";
+import { useTimer } from 'react-timer-hook';
 
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 let isCorrectAux=0
 export default function Regulamento() {
@@ -15,74 +16,8 @@ export default function Regulamento() {
   const [index, setIndex] = useState(0);
   const [questions, setQuestions] = useState([]);
 
-  const Ref = useRef(null);
-
-  const [timer, setTimer] = useState("00:10");
-
-  const [startGameCount, setStartGameCount] = useState(3);
-
-  const getTimeRemaining = (e) => {
-    const total = Date.parse(e) - Date.parse(new Date());
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor((total / 1000 / 60 / 60) % 24);
-    return {
-      total,
-      hours,
-      minutes,
-      seconds,
-    };
-  };
-
-  const startTimer = (e) => {
-    const { total, hours, minutes, seconds } = getTimeRemaining(e);
-    if (total >= 0) {
-      setTimer(seconds > 9 ? seconds : "0" + seconds);
-    }
-  };
-
-  useEffect(() => {
-    setTimer("00:10");
-  }, [index+1]);
-
-  const clearTimer = (e) => {
-    setTimer("4");
-
-    if (Ref.current) clearInterval(Ref.current);
-    const id = setInterval(() => {
-      startTimer(e);
-    }, 1000);
-    Ref.current = id;
-  };
-
-  const getDeadTime = () => {
-    const deadline = new Date();
-
-    deadline.setSeconds(deadline.getSeconds() + 4);
-    return deadline;
-  };
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (startGameCount >= 0) {
-        setStartGameCount(startGameCount - 1);
-      }
-    }, 1000);
-  }, [startGameCount]);
-
-  useEffect(() => {
-    if (timer === "00") {
-      setIndex(index + 1);
-      console.log("acabou o tempo ");
-    }
-  }, [timer]);
-
-  useEffect(() => {
-    console.log(startGameCount);
-    if (startGameCount <= 0) {
-      clearTimer(getDeadTime());
-    }
-  }, [startGameCount]);
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + 60); // 10 minutes timer
 
   const getTeam = async () => {
     const {
@@ -159,7 +94,18 @@ export default function Regulamento() {
           zIndex: "999",
         }}
       >
-        {timer}
+        <MyTimer expiryTimestamp={time} onExpire={() => {
+          axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
+            correctAnswersCount: isCorrectAux
+          })
+          if(isCorrectAux >= 4) {
+            router.push('/agradecimento');
+          }
+          if(isCorrectAux < 4) {
+            router.push('/')
+          }
+          // router.push('/')
+        }}/>
       </p>
       <Image
         src="/uniao1.png"
@@ -208,7 +154,7 @@ export default function Regulamento() {
               className="questionA"
               onClick={() => handleClick(answer.isCorrect)}
             >
-              <h4>{answer.letter}</h4>
+              <h4>{answer.letter}{/* answer.isCorrect ? 'aqui' : '' */}</h4>
               {clicked ? (
                 answer.isCorrect ? (
                   <h2
@@ -271,5 +217,20 @@ export default function Regulamento() {
         </div>
       </div>
     </PerguntasView>
+  );
+}
+
+function MyTimer({ expiryTimestamp, onExpire }) {
+  const {
+    seconds,
+    minutes,
+  } = useTimer({ expiryTimestamp, onExpire: () => onExpire() });
+
+  return (
+    <div style={{textAlign: 'center'}}>
+      <div style={{fontSize: '16px'}}>
+        <span>{minutes}</span>:<span>{seconds}</span>
+      </div>
+    </div>
   );
 }
