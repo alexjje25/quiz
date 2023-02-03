@@ -5,7 +5,7 @@ import axios from "axios";
 
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 let isCorrectAux=0
 export default function Regulamento() {
@@ -134,10 +134,13 @@ export default function Regulamento() {
   const fetch = async () => {
     const { data } = await axios.get('http://localhost:3001/questions')
     setQuestions(shuffleArray(data[team ?? localStorage.getItem('team')])?.slice(0, 4))
+    console.log(questions)
   }
   useEffect(() => {
     fetch()
   }, [team])
+
+  if (!questions) return;
 
   return (
     <PerguntasView>
