@@ -13,7 +13,7 @@ export default function Home() {
         src="/grupomascara3.png"
         alt="Minha Figura"
         className="Imagem5"
-        style={{ marginBottom: "500px" }}
+        style={{ marginBottom: "844px", marginRight:"-98px" }}
       />
 
       <Image
@@ -28,11 +28,11 @@ export default function Home() {
         alt="Minha Figura"
         className="Imagem2"
         style={{
-          width: "1146px",
-          height: "608px",
-          paddingLeft: "116px",
-          paddingTop: "63px",
-          
+          width: "1667px",
+          height: "886px",
+          paddingLeft: "55px",
+          paddingTop: "170px",
+          paddingRight: "44px",
         }}
       />
 
@@ -41,15 +41,15 @@ export default function Home() {
         alt="Minha Figura"
         className="Imagem2"
         style={{
-          width: "1060px",
-          height: "505px",
-          paddingLeft: "158px",
-          paddingTop: "4px",
+          width: "1552px",
+          height: "735px",
+          paddingLeft: "56px",
+          paddingTop: "80px",
           paddingRight: "44px",
         }}
       />
 
-      <div style={{ position: 'absolute', width:'42%', display:'flex', alignItems:'flex-start', flexDirection:'column', paddingLeft:'116px' }}>
+      <div style={{ position: 'absolute', width:'37%', display:'flex', alignItems:'flex-start', flexDirection:'column', paddingLeft:'116px' }}>
       
         <h1>
         Participe do QUIZ e teste seus conhecimentos

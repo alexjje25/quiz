@@ -43,11 +43,11 @@ export default function Agradecimento() {
           paddingLeft:"10px",
         }}
       >
-        <h2>Regulamento</h2>
-        <h1>
-        O game consiste em o participante acertar as 4 perguntas selecionadas pelo sistema aleatoriamente.
+        <h2>Comercial</h2>
+        <h1 style={{width: '395px', marginTop:'-4px'}}>
+          Parabéns você acertou todas as perguntas!
         </h1>
-        <button onClick={() => router.push('/selecao-grupo')}>CONTINUAR</button>
+        {/* <button onClick={() => router.push('/selecao-grupo')}>CONTINUAR</button> */}
       </div>
     </RegulamentoView>
   );

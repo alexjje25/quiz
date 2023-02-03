@@ -12,7 +12,7 @@ export default function SelecaoGrupo() {
         src="/grupomascara3.png"
         alt="Minha Figura"
         className="Imagem5"
-        style={{ marginBottom: "500px" }}
+        style={{ marginBottom: "844px", marginRight:"-98px" }}
       />
 
       <Image
@@ -27,10 +27,10 @@ export default function SelecaoGrupo() {
         alt="Minha Figura"
         className="Imagem2"
         style={{
-          width: "1180px",
-          height: "608px",
-          paddingLeft: "142px",
-          paddingTop: "64px",
+          width: "1667px",
+          height: "890px",
+          paddingLeft: "52px",
+          paddingTop: "167px",
           paddingRight: "44px",
         }}
       />

@@ -9,11 +9,10 @@ export const PerguntasView = styled.main`
   height: 100%;
 
   .Imagem1 {
-    top: 0;
+    top: 28px;
     left: -47px;
-    /* margin-top: 36px; */
-    width: 1291px;
-    height: 635px;
+    width: 1710px;
+    height: 927px;
     position: relative;
   }
   .Imagem2 {
@@ -25,9 +24,9 @@ export const PerguntasView = styled.main`
 
   .TEEEE{
     position: absolute;
-    margin-top: -612px;
-    /* padding-right: -68px; */
-    padding-left: 118px;
+    margin-top: -812px;
+    /* padding-left: -5px; */
+    padding-right: 101px;
   }
   .img2{
     width: 10px;
@@ -111,6 +110,10 @@ export const PerguntasView = styled.main`
     color: #17717D;
     margin-top: 3px;
     padding-left: 35px;
+  }
+
+  .css-19vcw4s-MuiStack-root{
+    width: 149% !important;
   }
 
 

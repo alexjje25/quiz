@@ -60,7 +60,7 @@ export const AgradecimentosView = styled.main`
        letter-spacing: 0px;
     color: #72635D;
     opacity: 1;
-    width: 678px;
+    width: 329px;
     font-size: 22px;
     margin-top: -4px;
   }

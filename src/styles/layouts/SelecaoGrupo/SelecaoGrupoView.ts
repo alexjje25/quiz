@@ -16,11 +16,10 @@ export const SelecaoGrupoView = styled.main`
   }
 
   .Imagem1 {
-    top: 0;
+    top: 28px;
     left: -47px;
-    /* margin-top: 36px; */
-    width: 1291px;
-    height: 594px;
+    width: 1710px;
+    height: 960px;
     position: relative;
   }
   .Imagem2 {
