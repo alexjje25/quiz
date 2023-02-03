@@ -71,7 +71,7 @@ export default function Regulamento() {
     setTimeout(() => {
       setClicked(false);
       setIndex(index + 1);
-    }, 1000);
+    }, 4000);
 
   };
 
@@ -127,9 +127,9 @@ export default function Regulamento() {
         style={{ position: "absolute",
         color: "black",
         zIndex: "999",
-        width:"82px",
-        paddingLeft:"61px",
-        top:"32px",
+        width:"80px",
+        paddingLeft:"42px",
+        top:"30px",
        }}
       />
       <p
@@ -144,7 +144,7 @@ export default function Regulamento() {
         
         
       
-        {/* <MyTimer expiryTimestamp={time} onExpire={() => {
+        <MyTimer expiryTimestamp={time} onExpire={() => {
           axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
             correctAnswersCount: isCorrectAux
           })
@@ -155,7 +155,7 @@ export default function Regulamento() {
             router.push('/')
           }
           // router.push('/')
-        }}/> */}
+        }}/> 
       </p>
       </div>
       <div
@@ -238,7 +238,7 @@ export default function Regulamento() {
                 }}
               >
                 <div className="wrapperQuestion1">
-                  <span style={{color:"#72635D"}}>{answer.label}</span>
+                  <span style={{color:"#72635D", fontSize:"20px", fontFamily:"Poppins"}}>{answer.label}</span>
                 </div>
                 
               </div>
@@ -258,7 +258,7 @@ function MyTimer({ expiryTimestamp, onExpire }) {
 
   return (
     <div style={{textAlign: 'center'}}>
-      <div style={{fontSize: '40px'}}>
+      <div style={{fontSize: '52px', color:"white", }}>
         <span>{minutes}</span>:<span>{seconds}</span>
       </div>
     </div>
