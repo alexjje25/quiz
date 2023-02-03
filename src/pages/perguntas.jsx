@@ -23,6 +23,7 @@ export default function Regulamento() {
   getTeam()
 
   const shuffleArray = (arr) => {
+    if (!arr?.length) return;
     // Loop em todos os elementos
     for (let i = arr.length - 1; i > 0; i--) {
       // Escolhendo elemento aleatório
@@ -59,12 +60,13 @@ export default function Regulamento() {
 
   const fetch = async () => {
     const { data } = await axios.get('http://localhost:3001/questions')
-    setQuestions(shuffleArray(data.OpCo).slice(0, 4))
-    console.log(shuffleArray(data.OpCo).slice(0, 4))
+    console.log(data[team ?? localStorage.getItem('team')])
+    setQuestions(shuffleArray(data[team ?? localStorage.getItem('team')]).slice(0, 4))
+    console.log(shuffleArray(data[team ?? localStorage.getItem('team')]).slice(0, 4))
   }
   useEffect(() => {
     fetch()
-  }, [])
+  }, [team])
 
   return (
     <PerguntasView>
@@ -110,7 +112,7 @@ export default function Regulamento() {
         }}
       >
         <div className="main" style={{ marginTop: '0rem' }}>
-          <h2>{team}</h2>
+          <h2>{questions[index]?.area}</h2>
           <h1>
             {index+1} - {questions[index]?.title}
           </h1>
