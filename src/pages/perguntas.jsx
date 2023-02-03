@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 
+let isCorrectAux=0
 export default function Regulamento() {
   const router = useRouter();
   const [team, setTeam] = useState("");
@@ -95,6 +96,7 @@ export default function Regulamento() {
   getTeam();
 
   const shuffleArray = (arr) => {
+    if (!arr?.length) return;
     // Loop em todos os elementos
     for (let i = arr.length - 1; i > 0; i--) {
       // Escolhendo elemento aleatório
@@ -106,26 +108,23 @@ export default function Regulamento() {
     return arr;
   };
 
-  let isCorrectAux = 1;
   const handleClick = (isCorrect) => {
-    if (isCorrect) isCorrectAux++;
+    console.log(isCorrect)
+    if (isCorrect) isCorrectAux++
+    console.log(isCorrectAux)
     if (index === 3) {
-      axios.patch(
-        `http://localhost:3001/users/${localStorage.getItem("id:quiz")}`,
-        {
-          correctAnswersCount: isCorrectAux,
-        }
-      );
-      if (isCorrect === 4) {
-        router.push("/coleta-dados");
+      axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
+        correctAnswersCount: isCorrectAux
+      })
+      if(isCorrectAux >= 4) {
+        router.push('/agradecimento');
+      }
+      if(isCorrectAux < 4) {
+        router.push('/')
       }
       // router.push('/')
     }
-
-    if (isCorrectAux === 4) {
-      router.push("/agradecimento");
-    }
-    setClicked(true);
+    setClicked(true)
     setTimeout(() => {
       setClicked(false);
       setIndex(index + 1);
@@ -133,13 +132,14 @@ export default function Regulamento() {
   };
 
   const fetch = async () => {
-    const { data } = await axios.get("http://localhost:3001/questions");
-    setQuestions(shuffleArray(data.OpCo).slice(0, 4));
-    console.log(shuffleArray(data.OpCo).slice(0, 4));
-  };
+    const { data } = await axios.get('http://localhost:3001/questions')
+    console.log(data[team ?? localStorage.getItem('team')])
+    setQuestions(shuffleArray(data[team ?? localStorage.getItem('team')]).slice(0, 4))
+    console.log(shuffleArray(data[team ?? localStorage.getItem('team')]).slice(0, 4))
+  }
   useEffect(() => {
-    fetch();
-  }, []);
+    fetch()
+  }, [team])
 
   return (
     <PerguntasView>
@@ -194,8 +194,8 @@ export default function Regulamento() {
           paddingLeft: "19px",
         }}
       >
-        <div className="main" style={{ marginTop: "0rem" }}>
-          <h2>{team}</h2>
+        <div className="main" style={{ marginTop: '0rem' }}>
+          <h2>{questions[index]?.area}</h2>
           <h1>
             {index + 1} - {questions[index]?.title}
           </h1>

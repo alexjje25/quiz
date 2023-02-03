@@ -44,9 +44,15 @@ export default function SelecaoGrupo() {
         }}
       >
         <h1>Qual grupo você participa:</h1>
-        <div style={{display:'flex', gap:'40px', width:'515px', marginTop:'18px'}}>
-          <button onClick={() => router.push("/coleta-dados")}>TIME DEMANDA</button>
-          <button onClick={() => router.push("/coleta-dados")}>TIME COMERCIAL</button>
+        <div style={{ display: 'flex', gap: '10px', width: '515px', marginTop: '18px' }}>
+          <button style={{ marginBottom: '30px' }} onClick={() => {
+            router.push("/coleta-dados")
+            localStorage.setItem('team', 'demanda')
+          }}>Time Demanda</button>
+          <button onClick={() => {
+            router.push("/coleta-dados")
+            localStorage.setItem('team', 'comercial')
+          }}>Time Comercial</button>
         </div>
       </div>
     </SelecaoGrupoView>

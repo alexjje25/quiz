@@ -1,254 +1,17 @@
 {
   "users": [
     {
-      "id": 1,
-      "nome": "Alex Santos",
-      "email": "alex.jj25@gmail.com"
-    },
-    {
-      "id": 3,
-      "nome": "Alex2",
-      "email": "alex.jje30@gmail.com"
-    },
-    {
-      "nome": "Fred",
-      "email": "Flintstone",
-      "id": 4
-    },
-    {
-      "nome": "Fred",
-      "email": "Flintstone",
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "email": "alex.jje25@gmail.cm",
-      "name": "Alex",
-      "id": 7
-    },
-    {
-      "email": "alex.jje25@gmail.cm",
-      "name": "Alex",
-      "id": 8
-    },
-    {
-      "email": "",
-      "name": "",
-      "id": 9
-    },
-    {
-      "email": "testeId@gmail.com",
-      "name": "testeId",
-      "id": 10
-    },
-    {
-      "correctAnswersCount": false,
-      "id": 11
-    },
-    {
-      "correctAnswersCount": false,
-      "id": 12
-    },
-    {
-      "email": "test1",
-      "name": "test1",
-      "id": 13,
-      "correctAnswersCount": true
-    },
-    {
-      "email": "test2",
-      "name": "test2",
-      "id": 14,
-      "correctAnswersCount": 1
-    },
-    {
-      "email": "test4",
-      "name": "test4",
-      "id": 15,
-      "correctAnswersCount": 0
-    },
-    {
-      "email": "teste5",
-      "name": "teste5",
-      "id": 16,
-      "correctAnswersCount": 1
-    },
-    {
-      "email": "teste10",
-      "name": "teste10",
-      "id": 17,
-      "correctAnswersCount": 3
-    },
-    {
-      "email": "",
-      "name": "",
+      "email": "test@",
+      "name": "test",
       "team": "demanda",
-      "id": 18
-    },
-    {
-      "email": "a",
-      "name": "a",
-      "team": "comercial",
-      "id": 19
-    },
-    {
-      "email": "dawdad",
-      "name": "adwda",
-      "team": "demanda",
-      "id": 20
-    },
-    {
-      "email": "dwadadad",
-      "name": "dawdadawda",
-      "team": "comercial",
-      "id": 21
-    },
-    {
-      "email": "dawdadwad",
-      "name": "dawdwada",
-      "team": "comercial",
-      "id": 22
-    },
-    {
-      "email": "adwada",
-      "name": "dawda",
-      "id": 23,
-      "correctAnswersCount": 1
-    },
-    {
-      "email": "hh",
-      "name": "h",
-      "id": 24
-    },
-    {
-      "email": "s",
-      "name": "a",
-      "id": 25,
-      "correctAnswersCount": 2
-    },
-    {
-      "email": "w",
-      "name": "w",
-      "id": 26
-    },
-    {
-      "email": "adwda",
-      "name": "sdaw",
-      "id": 27
-    },
-    {
-      "email": "dawda",
-      "name": "dawda",
-      "id": 28
-    },
-    {
-      "email": "s",
-      "name": "sss",
-      "id": 29
-    },
-    {
-      "email": "s",
-      "name": "sss",
-      "id": 30
-    },
-    {
-      "email": "dawda",
-      "name": "dwada",
-      "id": 31
-    },
-    {
-      "email": "dawd",
-      "name": "dawda",
-      "id": 32
-    },
-    {
-      "email": "sdeadwd",
-      "name": "s",
-      "id": 33,
-      "correctAnswersCount": 1
-    },
-    {
-      "email": "kkkk",
-      "name": "kkk",
-      "id": 34,
-      "correctAnswersCount": 2
-    },
-    {
-      "email": "wdaw",
-      "name": "dawd",
-      "id": 35,
-      "correctAnswersCount": 2
-    },
-    {
-      "email": "dasds",
-      "name": "asda",
-      "id": 36,
-      "correctAnswersCount": 2
-    },
-    {
-      "email": "dasds",
-      "name": "asda",
-      "id": 37
-    },
-    {
-      "email": "kkkk",
-      "name": "kk",
-      "id": 38,
-      "correctAnswersCount": 1
-    },
-    {
-      "email": "hhh",
-      "name": "hh",
-      "id": 39
-    },
-    {
-      "email": "adwad@teste.com",
-      "name": "adaw",
-      "id": 40
-    },
-    {
-      "email": "dwadad@teste.com",
-      "name": "dwadada",
-      "id": 41
-    },
-    {
-      "email": "ssssssssss@ss.com",
-      "name": "ssss",
-      "id": 42
-    },
-    {
-      "email": "alex@teste.com",
-      "name": "Alex",
-      "id": 43
-    },
-    {
-      "email": "alex@tescte.com",
-      "name": "alex",
-      "id": 44,
-      "correctAnswersCount": 1
-    },
-    {
-      "email": "dwadada@teste.com",
-      "name": "dawdada",
-      "id": 45
-    },
-    {
-      "email": "kkkkkk@ggg",
-      "name": "kkkkkk",
-      "id": 46
-    },
-    {
-      "email": "jhhhhhh@jjjj",
-      "name": "kkkkkkj",
-      "id": 47
+      "id": 1
     }
   ],
   "questions": {
-    "OpCo": [
+    "demanda": [
       {
         "title": "Como realizo a exclusão de HCPs e HCOs no Veeva?",
+        "area": "Operações comerciais",
         "answers": [
           {
             "letter": "A",
@@ -269,6 +32,7 @@
       },
       {
         "title": "Qual tipo de registo de evento deve ser criado para um evento sem speaker?",
+        "area": "Operações comerciais",
         "answers": [
           {
             "letter": "A",
@@ -288,161 +52,276 @@
         ]
       },
       {
-        "title": "O QR Code ficará disponível por quanto tempo após a finalização do evento?",
+        "title": "Qual a importância de comunicar o novo instagram GSK para os HCPs?",
+        "area": "Digitais",
         "answers": [
           {
             "letter": "A",
-            "label": "Não há um tempo determinado",
+            "label": "O novo instagram ajudará somente no fortalecimento do novo visual e logo da GSK.",
             "isCorrect": false
           },
           {
             "letter": "B",
-            "label": "Um período de até 24h",
+            "label": "Por ser uma conta no Instagram, os conteúdos publicados não terão nenhuma relevância estratégica para a classe médica.",
             "isCorrect": false
           },
           {
             "letter": "C",
-            "label": "Um período de até 12h",
+            "label": "A nova conta trará informações de lançamentos e outras ações GSK que ajudarão na construção de uma marca mais forte junto a classe médica.",
             "isCorrect": true
           }
         ]
       },
       {
-        "title": "No tipo de registro Evento GSK, qual é o status que permite a realização do evento?",
+        "title": "Qual a importância de planejar uma cadência apropriada para o envio de mensagens?",
+        "area": "Digitais",
         "answers": [
           {
             "letter": "A",
-            "label": "Aprovado",
+            "label": "A cadência dos impactos não é importante visto que todo o segmento que dispara mensagens promocionais consegue ganhar a atenção do cliente. Aquele que consegue impactar mais vezes e mais rápido, sai na frente.",
             "isCorrect": false
           },
           {
             "letter": "B",
-            "label": "Solicitado",
+            "label": "Independente das mensagens, a cadência deve ser sempre a mesma para acostumar o cliente aos impactos GSK.",
             "isCorrect": false
           },
           {
             "letter": "C",
-            "label": "Confirmado",
+            "label": "Uma boa cadência no envio das mensagens respeita o timing dos clientes, fazendo com que eles se sintam confortáveis em receber e interagir com a empresa, sem ser abusivo ou inconveniente.",
             "isCorrect": true
           }
         ]
       },
       {
-        "title": "O aprovador do evento deve ser incluído em Membros da equipe?",
+        "title": "Qual status deve ter o e-mail para que conte para o PO3?",
+        "area": "SFE",
         "answers": [
           {
             "letter": "A",
-            "label": "Não",
+            "label": "Entregue (independente de ter sido aberto)",
             "isCorrect": true
           },
           {
             "letter": "B",
-            "label": "Sim",
+            "label": "Aberto",
             "isCorrect": false
           },
           {
             "letter": "C",
-            "label": "Depende do tipo de registro do evento",
+            "label": "Recusado",
             "isCorrect": false
           }
         ]
       },
       {
-        "title": "Qual procedimento para atualização do consentimento para e-mails e whatsapp?",
+        "title": "Qual o teto da curva de atingimento para pagamento de RV?",
+        "area": "SFE",
         "answers": [
           {
             "letter": "A",
-            "label": "1- Não é necessário registrar o opt-out do e-mail e whatsapp antigos 2- Cadastrar novo e-mail e whatsapp 3- Capturar novo opt-in",
+            "label": "250%",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "150%",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "100%",
+            "isCorrect": false
+          }
+        ]
+      }
+    ],
+    "comercial": [
+      {
+        "title": "Quais são os elementos do Ojbetivo Comercial da Visita (OCV)?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Ação esperada do médico + perfil de paciente ",
             "isCorrect": false
           },
           {
             "letter": "B",
-            "label": "1- Registrar o opt-out do e-mail e whatsapp antigos 2- Cadastrar novo e-mail e whatsapp 3- Capturar novo opt-in",
+            "label": "Ação esperada do médico + Perfil de paciente + Produto Gsk ao invés da concorrência",
             "isCorrect": true
           },
           {
             "letter": "C",
-            "label": "1- Cadastrar novo e-mail e whatsapp 2- Capturar novo opt-in 3- Registrar o opt-out do e-mail e whatsapp antigos ",
+            "label": "Perfil de paciente + Produto Gsk ao invés do concorrente ",
             "isCorrect": false
           }
         ]
       },
       {
-        "title": "A assinatura do HCP é obrigatória para captura de consentimento em visitas presenciais?",
+        "title": "Qual a sigla da técnica que usamos para contornar objeções?",
+        "area": "Treinamento",
         "answers": [
           {
             "letter": "A",
-            "label": "Não",
+            "label": "RACT",
             "isCorrect": false
           },
           {
             "letter": "B",
-            "label": "Sim",
-            "isCorrect": true
+            "label": "RARC",
+            "isCorrect": false
           },
           {
             "letter": "C",
-            "label": "O Rep pode digitar o CRM do HCP no campo id de consentimento",
+            "label": "RARCT",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual comportamento do médico esperamos ao atingir um GSO?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Que ele continue optando pela marca GSK no perfil de paciente que já prescreve",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Que concorde com os dados científicos que apresentei sobre o produto GSK",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Que mude o comportamento, se comprometendo a prescrever a marca GSK no perfil de paciente discutido",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Quais são as etapas da avaliação CLEAR?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Autoavaliação + Avaliação do Gestor + Avaliação Conjunta",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Avaliação do Gestor + Plano de Desenvolvimento",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Autoavaliação + Avaliação do Gestor + Avaliação Conjunta + Plano de Desenvolvimento",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Como classificar no CLEAR uma subcompetência em que o representante realiza com QUALIDADE, FREQUÊNCIA e AUTONOMIA?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Proficiente",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Insuficiente",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Avançado",
             "isCorrect": false
           }
         ]
       },
       {
-        "title": "Em caso de carro GSK danificado, posso usar veículo próprio para trabalhar?",
+        "title": "O Uniccampo tem por finalidade:",
+        "area": "Treinamento",
         "answers": [
           {
             "letter": "A",
-            "label": "Não, devo comunicar o setor de frota que providenciará o conserto e um carro provisório.",
-            "isCorrect": false
-          },
-          {
-            "letter": "B",
-            "label": "Sim, até que o carro da GSK esteja pronto para uso",
+            "label": "Ser uma ferramenta continua de capacitação, auto-estudo, comunicação e avaliação ",
             "isCorrect": true
           },
           {
+            "letter": "B",
+            "label": "Ser uma ferramenta de avaliação ",
+            "isCorrect": false
+          },
+          {
             "letter": "C",
-            "label": "Sim, pelo período máximo de 1 mês",
+            "label": "Ser uma ferramenta de comunicação e avaliação ",
             "isCorrect": false
           }
         ]
       },
       {
-        "title": "Quais dias posso abastecer meu veículo de trabalho?",
+        "title": "O que é o Free Text?",
+        "area": "Treinamento",
         "answers": [
           {
             "letter": "A",
-            "label": "Segunda a sexta, com exceção de feriados nacionais.",
-            "isCorrect": false
-          },
-          {
-            "letter": "B",
-            "label": "Qualquer dia",
+            "label": "É um texto padrão que colocamos para fechar o pós visita.",
             "isCorrect": true
           },
           {
+            "letter": "B",
+            "label": "É o registro qualitativo das interações entre o representante e o médico, garantindo o histórico  sequencial  dessas interações.",
+            "isCorrect": false
+          },
+          {
             "letter": "C",
-            "label": "Somente finais de semana e feriado.",
+            "label": "É um registro com solicitações do médico, por exemplo estudos clínicos, apoios de congressos, utilização de produto on label e off label.",
             "isCorrect": false
           }
         ]
       },
       {
-        "title": "Quando o PMT precisa ser revisado?",
+        "title": "Quais são os benefícios do Free Text?",
+        "area": "Treinamento",
         "answers": [
           {
             "letter": "A",
-            "label": "Trimestralmente.",
-            "isCorrect": false
-          },
-          {
-            "letter": "B",
-            "label": "No mínimo uma vez ao ano, quando houver mudança de dados cadastrais, ajuste de roteiros ou em mudança de território do colaborador",
+            "label": "Otimização do tempo na pré visita, permite a continuidade nas estratégias de cada visita criando um histórico e mitigação de rupturas no relacionamento entre rep e HCP. ",
             "isCorrect": true
           },
           {
+            "letter": "B",
+            "label": "Relatar em tempo real as solicitações do médico, exemplo: amostras grátis, estudos clínicos e apoio para congressos.",
+            "isCorrect": false
+          },
+          {
             "letter": "C",
-            "label": "Mensalmente",
+            "label": "Poder anotar os gostos pessoais do médico.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância do Plano de Território do REP?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Nos permite avaliar o cenário, a performance das marcas e registrar as ações que pretendo realizar para mover o resultado. ",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "É uma demanda da global que precisamos cumprir",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Registrar os eventos que vou realizar ao longo do ano",
             "isCorrect": false
           }
         ]
