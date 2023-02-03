@@ -1,1722 +1,1902 @@
-
-					{
-            "users": [
-              {
-                "email": "test@",
-                "name": "test",
-                "team": "demanda",
-                "id": 1
-              },
-              {
-                "email": "22@ljkj",
-                "name": "jhjhjh",
-                "team": "demanda",
-                "id": 2
-              },
-              {
-                "email": "addwad@dawd",
-                "name": "adsadadw",
-                "team": "demanda",
-                "id": 3
-              },
-              {
-                "email": "dadwa@dawda",
-                "name": "awdadwa",
-                "team": "demanda",
-                "id": 4
-              },
-              {
-                "email": "new3@",
-                "name": "new3",
-                "team": "demanda",
-                "id": 5
-              },
-              {
-                "email": "new4@",
-                "name": "new4",
-                "team": "demanda",
-                "id": 6
-              },
-              {
-                "email": "adwad@sadw",
-                "name": "dwadadwadadw",
-                "team": "demanda",
-                "id": 7
-              },
-              {
-                "email": "daadw@daw",
-                "name": "dawdaddwa",
-                "team": "demanda",
-                "id": 8,
-                "correctAnswersCount": 10
-              },
-              {
-                "email": "dwada@dawdwa",
-                "name": "SQSdwad",
-                "team": "demanda",
-                "id": 9
-              },
-              {
-                "email": "dwada@dawd",
-                "name": "awd",
-                "team": "demanda",
-                "id": 10,
-                "correctAnswersCount": 1
-              },
-              {
-                "email": "dawda@dawda",
-                "name": "dadada",
-                "team": "demanda",
-                "id": 11,
-                "correctAnswersCount": 2
-              },
-              {
-                "email": "addawda@dawda",
-                "name": "wadadadw",
-                "team": "demanda",
-                "id": 12,
-                "correctAnswersCount": 6
-              }
-            ],
-            "questions": {
-              "demanda": [
-                {
-                  "title": "Como realizo a exclusão de HCPs e HCOs no Veeva?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Veeva Online",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Módulo de Planejamento",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Minhas Contas",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual tipo de registo de evento deve ser criado para um evento sem speaker?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Evento Pai",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Evento GSK",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Evento Simples",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                {
-                  "title": "O QR Code ficará disponível por quanto tempo após a finalização do evento?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não há um tempo determinado",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Um período de até 24h",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Um período de até 12h",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              {
-                  "title": "No tipo de registro Evento GSK, qual é o status que permite a realização do evento?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Aprovado",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Solicitado",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Confirmado",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              {
-                  "title": "O aprovador do evento deve ser incluído em Membros da equipe?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Sim",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Depende do tipo de registro do evento",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "Qual procedimento para atualização do consentimento para e-mails e whatsapp?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "1- Não é necessário registrar o opt-out do e-mail e whatsapp antigos ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "1- Registrar o opt-out do e-mail e whatsapp antigos ",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "1- Cadastrar novo e-mail e whatsapp",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "A assinatura do HCP é obrigatória para captura de consentimento em visitas presenciais?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Sim",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "O Rep pode digitar o CRM do HCP no campo id de consentimento",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "Em caso de carro GSK danificado, posso usar veículo próprio para trabalhar?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não, devo comunicar o setor de frota que providenciará o conserto e um carro provisório.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Sim, até que o carro da GSK esteja pronto para uso",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Sim, pelo período máximo de 1 mês",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "Quais dias posso abastecer meu veículo de trabalho?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Segunda a sexta, com exceção de feriados nacionais.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Qualquer dia",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Somente finais de semana e feriado.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Quando o PMT precisa ser revisado?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Trimestralmente",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "No mínimo uma vez ao ano, quando houver mudança de dados cadastrais, ajuste de roteiros ou em mudança de território do colaborador",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Mensalmente",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a importância de comunicar o novo instagram GSK para os HCPs?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "O novo instagram ajudará somente no fortalecimento do novo visual e logo da GSK.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Por ser uma conta no Instagram, os conteúdos publicados não terão nenhuma relevância estratégica para a classe médica.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "A nova conta trará informações de lançamentos e outras ações GSK que ajudarão na construção de uma marca mais forte junto a classe médica.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                   {
-                  "title": "Qual a importância de se utilizar diferentes canais para o reforço da mensagem?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "O uso de diferentes canais permite aumentar somente a sensação de atendimento ao cliente.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Tanto a visita, email e o whatsapp possuem a mesma função no relacionamento com o médico e possuem estratégias de uso exatamente iguais com cada cliente.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "O uso de diferentes canais permite aumentar a frequência da mensagem e a criação de um sentimento de relacionamento maior da empresa com seu cliente.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a importância de planejar uma cadência apropriada para o envio de mensagens?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "A cadência dos impactos não é importante visto que todo o segmento que dispara mensagens promocionais consegue ganhar a atenção do cliente. Aquele que consegue impactar mais vezes e mais rápido, sai na frente.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Independente das mensagens, a cadência deve ser sempre a mesma para acostumar o cliente aos impactos GSK.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Uma boa cadência no envio das mensagens respeita o timing dos clientes, fazendo com que eles se sintam confortáveis em receber e interagir com a empresa, sem ser abusivo ou inconveniente.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Você sabe o que é e o que pode ser encontrado no portal Conectados?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "O Conectados é um site exclusivo para a transmissão de eventos. ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": " O Conectados é um aplicativo de rotas de visitação, para apoio do representante. ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "O Conectados é um portal de comunicação da GSK com os HCPs, onde eles encontram diversos tipos de conteúdo sobre produtos, áreas terapêuticas, em diferentes formatos, como vídeos e artigos científicos, além de poder participar de eventos virtuais e fazer solicitações de amostras grátis.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-               {
-                  "title": "Qual a importância de se obter consentimento para manter contato com o HCP?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Garantir que o HCP fique feliz na relação com a GSK, assegurando a satisfação do cliente.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Além de estar previsto na Lei de Proteção de Dados Pessoais (LGPD), o consentimento é a melhor forma de entendermos o quanto o HCP está disposto e aberto aos nossos contatos e conteúdos. É uma forma educada de construir um bom relacionamento e duradouro com os nossos clientes.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "O consentimento é importante para que o representante fale sobre qualquer assunto com o HCP e compartilhe arquivos de diferentes naturezas e extensões. ",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "O que é LGPD?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "A Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018, é a legislação brasileira que regula as atividades de tratamento de dados pessoais. Foi promulgada e entrou em vigor em 2020 para proteger os direitos fundamentais de liberdade e de privacidade.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "A sigla LGPD significa Legislação Guardada por Políticas Direcionadas, Lei nº 3.727/2015, que tem como objetivo de armazenar todas as leis e políticas em um único local. ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "A Lei Geral de Proteção de Dados Pessoais é a legislação brasileira que regula as atividades de tratamento de dados pessoais, que ainda não entrou em vigor.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-               {
-                  "title": "O que não pode ser dito na conversa de WhatsApp com o HCP?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "É proibido abordar sobre drogas ilícitas, suborno e anti-propina, indicações off Label, compartilhar informações confidenciais PIIS, fazer promoção Indevida e ter uma conduta inadequada",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Só não podemos falar sobre eventos adversos dos medicamentos.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": " É proibido abordar sobre o Viver Mais e distribuir links para conteúdos nos portais GSKpro e Conectados.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Como é possível saber se o consentimento do HCP em receber comunicações por e-mail ou telefone foi cadastrado corretamente no Veeva? ",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Após cadastrar o e-mail ou telefone do HCP no Veeva, em até 72h o contato do médico irá aparecer na plataforma e o Rep não precisa fazer mais nada.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "O processo correto é cadastrar o e-mail ou telefone do HCP no Veeva, marcar o termo de consentimento e solicitar a assinatura do HCP.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": " Após cadastrar o e-mail ou telefone do HCP no Veeva, em até 72h o contato do médico irá aparecer na plataforma e o Rep precisa aguardar a área jurídica da empresa entrar em contato com o médico para solicitar o consentimento duplo.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a importância estratégica de se usar o e-mail na comunicação com o HCP?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Reforçar a mensagem apresentada, presença de marca, estreitar o relacionamento com o HCP e mapeamento do senso de interesse do painel visitado.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Contabilizar no Po3 e convidar os HCPs para eventos. ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Fazer comunicados urgentes e alinhar dias de visitação. ",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              
-              {
-                  "title": "Quais os possíveis riscos de enviar uma mensagem sem ter o consentimento do médico ou enviar mensagens através do celular pessoal?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não há riscos, uma vez que as mensagens não são monitoradas pela GSK.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "O número de telefone pode ser cancelado pela operadora e o endereço de email pode ser bloqueado pela plataforma Veeva.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Estaríamos agindo em não conformidade com a LGPD e portanto, expondo a GSK à penalidades, multas e processos jurídicos, além de agir contra as normas de conduta estabelecidas pela GSK.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-              
-              {
-                  "title": "Qual o objetivo do PO3?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Enviar e-mails e levar médicos a eventos",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Medir o sucesso da estratégia de engajamento omnichannel da Força de Vendas junto aos médicos A e B para as marcas prioritárias",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Medir engajamento de médicos de baixo potencial",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-               {
-                  "title": "Qual o período de apuração do PO3?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Trimestre Móvel",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Mensal",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Anual",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "Qual das opções não é um critério para o PO3?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Médico A/B planejado todos os meses do MQT",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Impacto ao médico A/B por 3 canais no trimestre móvel (F2F/Engage + Email 1:1 + Eventos/Webinars)",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Ao menos 2 impactos por mês (por 1 ou mais canais) a médicos de baixo potencial",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-          
-                {
-                  "title": "Qual status deve ter o e-mail para que conte para o PO3?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Entregue (independente de ter sido aberto)",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Aberto",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Recusado",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Contam para o PO3 Eventos realizados pela FV ou webinars, onde o HCP:",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "a) Informou que compareceria",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "a) foi incluído na lista de participantes; b) teve assinatura capturada via ipad ou QR Code; c) o produto consta como primário ou secundário; d) Independente de quem criou ou participou do evento (foco no HCP)",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "a) Foi convidado pelo REP que criou o evento",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Para atingir o Power of 3, o REP deverá a cada mês",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "a) Visitar; b) enviar e-mails; c) levar médicos de baixo potencial a eventos",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "a) Planejar os HCPs AB para marcas prioritárias; b) Realizar ao menos 1 visita F2F/Engage aos HCPs AB; c) Entregar ao menos 1 Email 1:1 aos HCPs AB;d) Cobrir 1/3 dos HCPs AB com eventos (diferentes a cada mês)",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "a)Visitar;b) enviar e-mails a todos os médicos do painel planejado",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "São gatilhos para ser elegível a receber remuneração variável:",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "a) Atingir o objetivo mensal;b) Certificação de compliance",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "a) Atingir o objetivo mensal;b) Certificação de conhecimento",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "a) Certificação de Compliance;b) Certificação de Conhecimento",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Quantas tentativas de cada certificação (compliance e conhecimento), exigidas como gatilho para pagamento de remuneração variável, podem ser realizadas pelo colaborador?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "1",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "3",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "2",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Quantas tentativas das certificações podem ser realizadas?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "1",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "3",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "2",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-                {
-                  "title": "Qual o teto da curva de atingimento para pagamento de RV?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "250%",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "150%",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "100%",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Quais são os elementos do Ojbetivo Comercial da Visita (OCV)?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Ação esperada do médico + perfil de paciente ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Ação esperada do médico + Perfil de paciente + Produto Gsk ao invés da concorrência",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Perfil de paciente + Produto Gsk ao invés do concorrente ",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a sigla da técnica que usamos para contornar objeções?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "RACT",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "RARC",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "RARCT",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual comportamento do médico esperamos ao atingir um GSO?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Que ele continue optando pela marca GSK no perfil de paciente que já prescreve",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Que concorde com os dados científicos que apresentei sobre o produto GSK",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Que mude o comportamento, se comprometendo a prescrever a marca GSK no perfil de paciente discutido",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                {
-                  "title": "Quais são as etapas da avaliação CLEAR?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Autoavaliação + Avaliação do Gestor + Avaliação Conjunta",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Avaliação do Gestor + Plano de Desenvolvimento",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Autoavaliação + Avaliação do Gestor + Avaliação Conjunta + Plano de Desenvolvimento",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                {
-                  "title": "Como classificar no CLEAR uma subcompetência em que o representante realiza com QUALIDADE, FREQUÊNCIA e AUTONOMIA?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Proficiente",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Insuficiente",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Avançado",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "O Uniccampo tem por finalidade:",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Ser uma ferramenta continua de capacitação, auto-estudo, comunicação e avaliação ",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Ser uma ferramenta de avaliação ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Ser uma ferramenta de comunicação e avaliação ",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "O que é o Free Text?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "É um texto padrão que colocamos para fechar o pós visita.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "É o registro qualitativo das interações entre o representante e o médico, garantindo o histórico  sequencial  dessas interações.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "É um registro com solicitações do médico, por exemplo estudos clínicos, apoios de congressos, utilização de produto on label e off label.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Quais são os benefícios do Free Text?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Otimização do tempo na pré visita, permite a continuidade nas estratégias de cada visita criando um histórico e mitigação de rupturas no relacionamento entre rep e HCP. ",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Relatar em tempo real as solicitações do médico, exemplo: amostras grátis, estudos clínicos e apoio para congressos.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Poder anotar os gostos pessoais do médico.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a importância do Plano de Território do REP?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Nos permite avaliar o cenário, a performance das marcas e registrar as ações que pretendo realizar para mover o resultado. ",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "É uma demanda da global que precisamos cumprir",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Registrar os eventos que vou realizar ao longo do ano",
-                      "isCorrect": false
-                    }
-                  ]
-                }
-              ],
-            
-              "comercial": [
-            {
-                  "title": "Como realizo a exclusão de HCPs e HCOs no Veeva?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Veeva Online",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Módulo de Planejamento",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Minhas Contas",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual tipo de registo de evento deve ser criado para um evento sem speaker?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Evento Pai",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Evento GSK",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Evento Simples",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                {
-                  "title": "O QR Code ficará disponível por quanto tempo após a finalização do evento?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não há um tempo determinado",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Um período de até 24h",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Um período de até 12h",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              {
-                  "title": "No tipo de registro Evento GSK, qual é o status que permite a realização do evento?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Aprovado",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Solicitado",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Confirmado",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              {
-                  "title": "O aprovador do evento deve ser incluído em Membros da equipe?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Sim",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Depende do tipo de registro do evento",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "Qual procedimento para atualização do consentimento para e-mails e whatsapp?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "1- Não é necessário registrar o opt-out do e-mail e whatsapp antigos ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "1- Registrar o opt-out do e-mail e whatsapp antigos ",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "1- Cadastrar novo e-mail e whatsapp",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "A assinatura do HCP é obrigatória para captura de consentimento em visitas presenciais?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Sim",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "O Rep pode digitar o CRM do HCP no campo id de consentimento",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "Em caso de carro GSK danificado, posso usar veículo próprio para trabalhar?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não, devo comunicar o setor de frota que providenciará o conserto e um carro provisório.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Sim, até que o carro da GSK esteja pronto para uso",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Sim, pelo período máximo de 1 mês",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "Quais dias posso abastecer meu veículo de trabalho?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Segunda a sexta, com exceção de feriados nacionais.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Qualquer dia",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Somente finais de semana e feriado.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Quando o PMT precisa ser revisado?",
-                  "area": "Operações comerciais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Trimestralmente",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "No mínimo uma vez ao ano, quando houver mudança de dados cadastrais, ajuste de roteiros ou em mudança de território do colaborador",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Mensalmente",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a importância de comunicar o novo instagram GSK para os HCPs?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "O novo instagram ajudará somente no fortalecimento do novo visual e logo da GSK.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Por ser uma conta no Instagram, os conteúdos publicados não terão nenhuma relevância estratégica para a classe médica.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "A nova conta trará informações de lançamentos e outras ações GSK que ajudarão na construção de uma marca mais forte junto a classe médica.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                   {
-                  "title": "Qual a importância de se utilizar diferentes canais para o reforço da mensagem?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "O uso de diferentes canais permite aumentar somente a sensação de atendimento ao cliente.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Tanto a visita, email e o whatsapp possuem a mesma função no relacionamento com o médico e possuem estratégias de uso exatamente iguais com cada cliente.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "O uso de diferentes canais permite aumentar a frequência da mensagem e a criação de um sentimento de relacionamento maior da empresa com seu cliente.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a importância de planejar uma cadência apropriada para o envio de mensagens?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "A cadência dos impactos não é importante visto que todo o segmento que dispara mensagens promocionais consegue ganhar a atenção do cliente. Aquele que consegue impactar mais vezes e mais rápido, sai na frente.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Independente das mensagens, a cadência deve ser sempre a mesma para acostumar o cliente aos impactos GSK.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Uma boa cadência no envio das mensagens respeita o timing dos clientes, fazendo com que eles se sintam confortáveis em receber e interagir com a empresa, sem ser abusivo ou inconveniente.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Você sabe o que é e o que pode ser encontrado no portal Conectados?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "O Conectados é um site exclusivo para a transmissão de eventos. ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": " O Conectados é um aplicativo de rotas de visitação, para apoio do representante. ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "O Conectados é um portal de comunicação da GSK com os HCPs, onde eles encontram diversos tipos de conteúdo sobre produtos, áreas terapêuticas, em diferentes formatos, como vídeos e artigos científicos, além de poder participar de eventos virtuais e fazer solicitações de amostras grátis.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-               {
-                  "title": "Qual a importância de se obter consentimento para manter contato com o HCP?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Garantir que o HCP fique feliz na relação com a GSK, assegurando a satisfação do cliente.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Além de estar previsto na Lei de Proteção de Dados Pessoais (LGPD), o consentimento é a melhor forma de entendermos o quanto o HCP está disposto e aberto aos nossos contatos e conteúdos. É uma forma educada de construir um bom relacionamento e duradouro com os nossos clientes.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "O consentimento é importante para que o representante fale sobre qualquer assunto com o HCP e compartilhe arquivos de diferentes naturezas e extensões. ",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "O que é LGPD?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "A Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018, é a legislação brasileira que regula as atividades de tratamento de dados pessoais. Foi promulgada e entrou em vigor em 2020 para proteger os direitos fundamentais de liberdade e de privacidade.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "A sigla LGPD significa Legislação Guardada por Políticas Direcionadas, Lei nº 3.727/2015, que tem como objetivo de armazenar todas as leis e políticas em um único local. ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "A Lei Geral de Proteção de Dados Pessoais é a legislação brasileira que regula as atividades de tratamento de dados pessoais, que ainda não entrou em vigor.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-               {
-                  "title": "O que não pode ser dito na conversa de WhatsApp com o HCP?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "É proibido abordar sobre drogas ilícitas, suborno e anti-propina, indicações off Label, compartilhar informações confidenciais PIIS, fazer promoção Indevida e ter uma conduta inadequada",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Só não podemos falar sobre eventos adversos dos medicamentos.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": " É proibido abordar sobre o Viver Mais e distribuir links para conteúdos nos portais GSKpro e Conectados.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Como é possível saber se o consentimento do HCP em receber comunicações por e-mail ou telefone foi cadastrado corretamente no Veeva? ",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Após cadastrar o e-mail ou telefone do HCP no Veeva, em até 72h o contato do médico irá aparecer na plataforma e o Rep não precisa fazer mais nada.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "O processo correto é cadastrar o e-mail ou telefone do HCP no Veeva, marcar o termo de consentimento e solicitar a assinatura do HCP.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": " Após cadastrar o e-mail ou telefone do HCP no Veeva, em até 72h o contato do médico irá aparecer na plataforma e o Rep precisa aguardar a área jurídica da empresa entrar em contato com o médico para solicitar o consentimento duplo.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a importância estratégica de se usar o e-mail na comunicação com o HCP?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Reforçar a mensagem apresentada, presença de marca, estreitar o relacionamento com o HCP e mapeamento do senso de interesse do painel visitado.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Contabilizar no Po3 e convidar os HCPs para eventos. ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Fazer comunicados urgentes e alinhar dias de visitação. ",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              
-              {
-                  "title": "Quais os possíveis riscos de enviar uma mensagem sem ter o consentimento do médico ou enviar mensagens através do celular pessoal?",
-                  "area": "Digitais",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Não há riscos, uma vez que as mensagens não são monitoradas pela GSK.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "O número de telefone pode ser cancelado pela operadora e o endereço de email pode ser bloqueado pela plataforma Veeva.",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Estaríamos agindo em não conformidade com a LGPD e portanto, expondo a GSK à penalidades, multas e processos jurídicos, além de agir contra as normas de conduta estabelecidas pela GSK.",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-              
-              {
-                  "title": "Qual o objetivo do PO3?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Enviar e-mails e levar médicos a eventos",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Medir o sucesso da estratégia de engajamento omnichannel da Força de Vendas junto aos médicos A e B para as marcas prioritárias",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Medir engajamento de médicos de baixo potencial",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-               {
-                  "title": "Qual o período de apuração do PO3?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Trimestre Móvel",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Mensal",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Anual",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              {
-                  "title": "Qual das opções não é um critério para o PO3?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Médico A/B planejado todos os meses do MQT",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Impacto ao médico A/B por 3 canais no trimestre móvel (F2F/Engage + Email 1:1 + Eventos/Webinars)",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Ao menos 2 impactos por mês (por 1 ou mais canais) a médicos de baixo potencial",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-          
-                {
-                  "title": "Qual status deve ter o e-mail para que conte para o PO3?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Entregue (independente de ter sido aberto)",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Aberto",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Recusado",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Contam para o PO3 Eventos realizados pela FV ou webinars, onde o HCP:",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "a) Informou que compareceria",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "a) foi incluído na lista de participantes; b) teve assinatura capturada via ipad ou QR Code; c) o produto consta como primário ou secundário; d) Independente de quem criou ou participou do evento (foco no HCP)",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "a) Foi convidado pelo REP que criou o evento",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Para atingir o Power of 3, o REP deverá a cada mês",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "a) Visitar; b) enviar e-mails; c) levar médicos de baixo potencial a eventos",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "a) Planejar os HCPs AB para marcas prioritárias; b) Realizar ao menos 1 visita F2F/Engage aos HCPs AB; c) Entregar ao menos 1 Email 1:1 aos HCPs AB;d) Cobrir 1/3 dos HCPs AB com eventos (diferentes a cada mês)",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "a)Visitar;b) enviar e-mails a todos os médicos do painel planejado",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "São gatilhos para ser elegível a receber remuneração variável:",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "a) Atingir o objetivo mensal;b) Certificação de compliance",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "a) Atingir o objetivo mensal;b) Certificação de conhecimento",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "a) Certificação de Compliance;b) Certificação de Conhecimento",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Quantas tentativas de cada certificação (compliance e conhecimento), exigidas como gatilho para pagamento de remuneração variável, podem ser realizadas pelo colaborador?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "1",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "3",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "2",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-              {
-                  "title": "Quantas tentativas das certificações podem ser realizadas?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "1",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "3",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "2",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-              
-                {
-                  "title": "Qual o teto da curva de atingimento para pagamento de RV?",
-                  "area": "SFE",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "250%",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "150%",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "100%",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Quais são os elementos do Ojbetivo Comercial da Visita (OCV)?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Ação esperada do médico + perfil de paciente ",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Ação esperada do médico + Perfil de paciente + Produto Gsk ao invés da concorrência",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Perfil de paciente + Produto Gsk ao invés do concorrente ",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Qual a sigla da técnica que usamos para contornar objeções?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "RACT",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "RARC",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "RARCT",
-                      "isCorrect": true
-                    }
-                  ]
-                },
-          
-               
-                {
-                  "title": "O que é market-share?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "É o resultado das vendas",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "É participação no mercado em relação a outros produtos/ concorrentes",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "É a quantidade de unidades vendidas de produtos GSK",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Sell-in é:",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Resultado da venda B2B",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Resultado da venda B2C",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Resultado da venda B2B2C",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Sell-out é:?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Comercialização direta no cliente final",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Compra de produtos da indústria",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Compra de produtos no atacado",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Quais são as etapas da avaliação CLEAR?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Autoavaliação + Avaliação do Gestor + Avaliação Conjunta + Plano de Desenvolvimento",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Relatar em tempo real as solicitações do médico, exemplo: amostras grátis, estudos clínicos e apoio para congressos.",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Poder anotar os gostos pessoais do médico.",
-                      "isCorrect": false
-                    }
-                  ]
-                },
-                {
-                  "title": "Como classificar no CLEAR uma subcompetência em que o representante realiza com QUALIDADE, FREQUÊNCIA e AUTONOMIA?",
-                  "area": "Treinamento",
-                  "answers": [
-                    {
-                      "letter": "A",
-                      "label": "Insuficiente",
-                      "isCorrect": false
-                    },
-                    {
-                      "letter": "B",
-                      "label": "Proficiente",
-                      "isCorrect": true
-                    },
-                    {
-                      "letter": "C",
-                      "label": "Avançado",
-                      "isCorrect": false
-                    }
-                  ]
-                }
-              ]
-            }
+{
+  "users": [
+    {
+      "email": "test@",
+      "name": "test",
+      "team": "demanda",
+      "id": 1
+    },
+    {
+      "email": "22@ljkj",
+      "name": "jhjhjh",
+      "team": "demanda",
+      "id": 2
+    },
+    {
+      "email": "addwad@dawd",
+      "name": "adsadadw",
+      "team": "demanda",
+      "id": 3
+    },
+    {
+      "email": "dadwa@dawda",
+      "name": "awdadwa",
+      "team": "demanda",
+      "id": 4
+    },
+    {
+      "email": "new3@",
+      "name": "new3",
+      "team": "demanda",
+      "id": 5
+    },
+    {
+      "email": "new4@",
+      "name": "new4",
+      "team": "demanda",
+      "id": 6
+    },
+    {
+      "email": "adwad@sadw",
+      "name": "dwadadwadadw",
+      "team": "demanda",
+      "id": 7
+    },
+    {
+      "email": "daadw@daw",
+      "name": "dawdaddwa",
+      "team": "demanda",
+      "id": 8,
+      "correctAnswersCount": 10
+    },
+    {
+      "email": "dwada@dawdwa",
+      "name": "SQSdwad",
+      "team": "demanda",
+      "id": 9
+    },
+    {
+      "email": "dwada@dawd",
+      "name": "awd",
+      "team": "demanda",
+      "id": 10,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "dawda@dawda",
+      "name": "dadada",
+      "team": "demanda",
+      "id": 11,
+      "correctAnswersCount": 2
+    },
+    {
+      "email": "addawda@dawda",
+      "name": "wadadadw",
+      "team": "demanda",
+      "id": 12,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "awdadwad@adwdad",
+      "name": "adwdad",
+      "team": "demanda",
+      "id": 13,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "awdadad@dawda",
+      "name": "dadwad",
+      "team": "demanda",
+      "id": 14,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "awdadwad@sdawda",
+      "name": "sadwad",
+      "team": "demanda",
+      "id": 15,
+      "correctAnswersCount": 4
+    },
+    {
+      "email": "cszczsc@dawda",
+      "name": "dwada",
+      "team": "demanda",
+      "id": 16,
+      "correctAnswersCount": 2
+    },
+    {
+      "email": "dwadwad@dawda",
+      "name": "awdadaw",
+      "team": "demanda",
+      "id": 17,
+      "correctAnswersCount": 2
+    },
+    {
+      "email": "wadwdwa@dawdwa",
+      "name": "wadwad",
+      "team": "demanda",
+      "id": 18,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "awdwad@dwdada",
+      "name": "awdad",
+      "team": "demanda",
+      "id": 19,
+      "correctAnswersCount": 3
+    },
+    {
+      "email": "ADWADA@DAWDADWAD",
+      "name": "DAWDADW",
+      "team": "demanda",
+      "id": 20,
+      "correctAnswersCount": 3
+    },
+    {
+      "email": "hshsg@skhsj",
+      "name": "hshss",
+      "team": "demanda",
+      "id": 21,
+      "correctAnswersCount": 3
+    },
+    {
+      "email": "jkjkjkj@lkjk",
+      "name": "jkjkjk",
+      "team": "comercial",
+      "id": 22,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "dawdwada@dawda",
+      "name": "dadwa",
+      "team": "demanda",
+      "id": 23,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "awdwadaw@dawda",
+      "name": "dawdad",
+      "team": "demanda",
+      "id": 24,
+      "correctAnswersCount": 3
+    },
+    {
+      "email": "wadada@dawd",
+      "name": "dwadadad",
+      "team": "demanda",
+      "id": 25,
+      "correctAnswersCount": 0
+    },
+    {
+      "email": "wadwa@fafwa",
+      "name": "dawdad",
+      "team": "demanda",
+      "id": 26,
+      "correctAnswersCount": 2
+    },
+    {
+      "email": "dawda@dawdad",
+      "name": "dwada",
+      "team": "demanda",
+      "id": 27,
+      "correctAnswersCount": 4
+    },
+    {
+      "email": "dawda@dawdad",
+      "name": "dawdadwa",
+      "team": "demanda",
+      "id": 28,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "awdadw@dawda",
+      "name": "dawdad",
+      "team": "demanda",
+      "id": 29,
+      "correctAnswersCount": 0
+    },
+    {
+      "email": "awdwadaw@dawdad",
+      "name": "dawdad",
+      "team": "demanda",
+      "id": 30,
+      "correctAnswersCount": 2
+    },
+    {
+      "email": "wadwadwad@dawdawd",
+      "name": "wadad",
+      "team": "demanda",
+      "id": 31,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "adwadad@dawdad",
+      "name": "dwadad",
+      "team": "demanda",
+      "id": 32,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "sfesffse2@3fefsf",
+      "name": "fsdfsef",
+      "team": "demanda",
+      "id": 33,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "awdwadaw@dawda",
+      "name": "dwadad",
+      "team": "demanda",
+      "id": 34,
+      "correctAnswersCount": 0
+    },
+    {
+      "email": "adwadawda@dawda",
+      "name": "dawdad",
+      "team": "demanda",
+      "id": 35
+    },
+    {
+      "email": "dawdwa@dadwad",
+      "name": "dawdad",
+      "team": "demanda",
+      "id": 36,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "ADAWDADA@DAWDWA",
+      "name": "ASDAWDWAD",
+      "team": "demanda",
+      "id": 37,
+      "correctAnswersCount": 0
+    },
+    {
+      "email": "AWDWADAWDAW@DAWDA",
+      "name": "DAWDWAD",
+      "team": "demanda",
+      "id": 38
+    },
+    {
+      "email": "AWDWADAWDAW@DAWDA",
+      "name": "DAWDWAD",
+      "team": "demanda",
+      "id": 39,
+      "correctAnswersCount": 0
+    },
+    {
+      "email": "AWDWADAWd2D@CAWADAWD",
+      "name": "DAWDWAD",
+      "team": "demanda",
+      "id": 40,
+      "correctAnswersCount": 2
+    },
+    {
+      "email": "DAWDADAD@DAWDA",
+      "name": "DAWDWADA",
+      "team": "demanda",
+      "id": 41
+    },
+    {
+      "email": "DAWDADAD@DAWDA",
+      "name": "DAWDWADA",
+      "team": "demanda",
+      "id": 42
+    },
+    {
+      "email": "dawdawd@dawda",
+      "name": "dawda",
+      "team": "demanda",
+      "id": 43,
+      "correctAnswersCount": 3
+    },
+    {
+      "email": "awdwadwada@dawd",
+      "name": "dawdad",
+      "team": "demanda",
+      "id": 44,
+      "correctAnswersCount": 3
+    }
+  ],
+  "questions": {
+    "demanda": [
+      {
+        "title": "Como realizo a exclusão de HCPs e HCOs no Veeva?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Veeva Online",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Módulo de Planejamento",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Minhas Contas",
+            "isCorrect": false
           }
-                
+        ]
+      },
+      {
+        "title": "Qual tipo de registo de evento deve ser criado para um evento sem speaker?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Evento Pai",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Evento GSK",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Evento Simples",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "O QR Code ficará disponível por quanto tempo após a finalização do evento?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não há um tempo determinado",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Um período de até 24h",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Um período de até 12h",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "No tipo de registro Evento GSK, qual é o status que permite a realização do evento?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Aprovado",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Solicitado",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Confirmado",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "O aprovador do evento deve ser incluído em Membros da equipe?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Sim",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Depende do tipo de registro do evento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual procedimento para atualização do consentimento para e-mails e whatsapp?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "1- Não é necessário registrar o opt-out do e-mail e whatsapp antigos ",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "1- Registrar o opt-out do e-mail e whatsapp antigos ",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "1- Cadastrar novo e-mail e whatsapp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "A assinatura do HCP é obrigatória para captura de consentimento em visitas presenciais?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Sim",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "O Rep pode digitar o CRM do HCP no campo id de consentimento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Em caso de carro GSK danificado, posso usar veículo próprio para trabalhar?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não, devo comunicar o setor de frota que providenciará o conserto e um carro provisório.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Sim, até que o carro da GSK esteja pronto para uso",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Sim, pelo período máximo de 1 mês",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais dias posso abastecer meu veículo de trabalho?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Segunda a sexta, com exceção de feriados nacionais.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Qualquer dia",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Somente finais de semana e feriado.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quando o PMT precisa ser revisado?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Trimestralmente",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "No mínimo uma vez ao ano, quando houver mudança de dados cadastrais, ajuste de roteiros ou em mudança de território do colaborador",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Mensalmente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância de comunicar o novo instagram GSK para os HCPs?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "O novo instagram ajudará somente no fortalecimento do novo visual e logo da GSK.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Por ser uma conta no Instagram, os conteúdos publicados não terão nenhuma relevância estratégica para a classe médica.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "A nova conta trará informações de lançamentos e outras ações GSK que ajudarão na construção de uma marca mais forte junto a classe médica.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância de se utilizar diferentes canais para o reforço da mensagem?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "O uso de diferentes canais permite aumentar somente a sensação de atendimento ao cliente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Tanto a visita, email e o whatsapp possuem a mesma função no relacionamento com o médico e possuem estratégias de uso exatamente iguais com cada cliente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "O uso de diferentes canais permite aumentar a frequência da mensagem e a criação de um sentimento de relacionamento maior da empresa com seu cliente.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância de planejar uma cadência apropriada para o envio de mensagens?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "A cadência dos impactos não é importante visto que todo o segmento que dispara mensagens promocionais consegue ganhar a atenção do cliente. Aquele que consegue impactar mais vezes e mais rápido, sai na frente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Independente das mensagens, a cadência deve ser sempre a mesma para acostumar o cliente aos impactos GSK.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Uma boa cadência no envio das mensagens respeita o timing dos clientes, fazendo com que eles se sintam confortáveis em receber e interagir com a empresa, sem ser abusivo ou inconveniente.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Você sabe o que é e o que pode ser encontrado no portal Conectados?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "O Conectados é um site exclusivo para a transmissão de eventos. ",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": " O Conectados é um aplicativo de rotas de visitação, para apoio do representante. ",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "O Conectados é um portal de comunicação da GSK com os HCPs, onde eles encontram diversos tipos de conteúdo sobre produtos, áreas terapêuticas, em diferentes formatos, como vídeos e artigos científicos, além de poder participar de eventos virtuais e fazer solicitações de amostras grátis.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância de se obter consentimento para manter contato com o HCP?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Garantir que o HCP fique feliz na relação com a GSK, assegurando a satisfação do cliente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Além de estar previsto na Lei de Proteção de Dados Pessoais (LGPD), o consentimento é a melhor forma de entendermos o quanto o HCP está disposto e aberto aos nossos contatos e conteúdos. É uma forma educada de construir um bom relacionamento e duradouro com os nossos clientes.",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "O consentimento é importante para que o representante fale sobre qualquer assunto com o HCP e compartilhe arquivos de diferentes naturezas e extensões. ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "O que é LGPD?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "A Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018, é a legislação brasileira que regula as atividades de tratamento de dados pessoais. Foi promulgada e entrou em vigor em 2020 para proteger os direitos fundamentais de liberdade e de privacidade.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "A sigla LGPD significa Legislação Guardada por Políticas Direcionadas, Lei nº 3.727/2015, que tem como objetivo de armazenar todas as leis e políticas em um único local. ",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "A Lei Geral de Proteção de Dados Pessoais é a legislação brasileira que regula as atividades de tratamento de dados pessoais, que ainda não entrou em vigor.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "O que não pode ser dito na conversa de WhatsApp com o HCP?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "É proibido abordar sobre drogas ilícitas, suborno e anti-propina, indicações off Label, compartilhar informações confidenciais PIIS, fazer promoção Indevida e ter uma conduta inadequada",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Só não podemos falar sobre eventos adversos dos medicamentos.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": " É proibido abordar sobre o Viver Mais e distribuir links para conteúdos nos portais GSKpro e Conectados.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Como é possível saber se o consentimento do HCP em receber comunicações por e-mail ou telefone foi cadastrado corretamente no Veeva? ",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Após cadastrar o e-mail ou telefone do HCP no Veeva, em até 72h o contato do médico irá aparecer na plataforma e o Rep não precisa fazer mais nada.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "O processo correto é cadastrar o e-mail ou telefone do HCP no Veeva, marcar o termo de consentimento e solicitar a assinatura do HCP.",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": " Após cadastrar o e-mail ou telefone do HCP no Veeva, em até 72h o contato do médico irá aparecer na plataforma e o Rep precisa aguardar a área jurídica da empresa entrar em contato com o médico para solicitar o consentimento duplo.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância estratégica de se usar o e-mail na comunicação com o HCP?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Reforçar a mensagem apresentada, presença de marca, estreitar o relacionamento com o HCP e mapeamento do senso de interesse do painel visitado.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Contabilizar no Po3 e convidar os HCPs para eventos. ",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Fazer comunicados urgentes e alinhar dias de visitação. ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais os possíveis riscos de enviar uma mensagem sem ter o consentimento do médico ou enviar mensagens através do celular pessoal?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não há riscos, uma vez que as mensagens não são monitoradas pela GSK.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "O número de telefone pode ser cancelado pela operadora e o endereço de email pode ser bloqueado pela plataforma Veeva.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Estaríamos agindo em não conformidade com a LGPD e portanto, expondo a GSK à penalidades, multas e processos jurídicos, além de agir contra as normas de conduta estabelecidas pela GSK.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual o objetivo do PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Enviar e-mails e levar médicos a eventos",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Medir o sucesso da estratégia de engajamento omnichannel da Força de Vendas junto aos médicos A e B para as marcas prioritárias",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Medir engajamento de médicos de baixo potencial",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual o período de apuração do PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Trimestre Móvel",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Mensal",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Anual",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual das opções não é um critério para o PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Médico A/B planejado todos os meses do MQT",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Impacto ao médico A/B por 3 canais no trimestre móvel (F2F/Engage + Email 1:1 + Eventos/Webinars)",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Ao menos 2 impactos por mês (por 1 ou mais canais) a médicos de baixo potencial",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual status deve ter o e-mail para que conte para o PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Entregue (independente de ter sido aberto)",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Aberto",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Recusado",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Contam para o PO3 Eventos realizados pela FV ou webinars, onde o HCP:",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "a) Informou que compareceria",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "a) foi incluído na lista de participantes; b) teve assinatura capturada via ipad ou QR Code; c) o produto consta como primário ou secundário; d) Independente de quem criou ou participou do evento (foco no HCP)",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "a) Foi convidado pelo REP que criou o evento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Para atingir o Power of 3, o REP deverá a cada mês",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "a) Visitar; b) enviar e-mails; c) levar médicos de baixo potencial a eventos",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "a) Planejar os HCPs AB para marcas prioritárias; b) Realizar ao menos 1 visita F2F/Engage aos HCPs AB; c) Entregar ao menos 1 Email 1:1 aos HCPs AB;d) Cobrir 1/3 dos HCPs AB com eventos (diferentes a cada mês)",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "a)Visitar;b) enviar e-mails a todos os médicos do painel planejado",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "São gatilhos para ser elegível a receber remuneração variável:",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "a) Atingir o objetivo mensal;b) Certificação de compliance",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "a) Atingir o objetivo mensal;b) Certificação de conhecimento",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "a) Certificação de Compliance;b) Certificação de Conhecimento",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Quantas tentativas de cada certificação (compliance e conhecimento), exigidas como gatilho para pagamento de remuneração variável, podem ser realizadas pelo colaborador?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "1",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "3",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "2",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Quantas tentativas das certificações podem ser realizadas?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "1",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "3",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "2",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual o teto da curva de atingimento para pagamento de RV?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "250%",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "150%",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "100%",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais são os elementos do Ojbetivo Comercial da Visita (OCV)?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Ação esperada do médico + perfil de paciente ",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Ação esperada do médico + Perfil de paciente + Produto Gsk ao invés da concorrência",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Perfil de paciente + Produto Gsk ao invés do concorrente ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a sigla da técnica que usamos para contornar objeções?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "RACT",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "RARC",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "RARCT",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual comportamento do médico esperamos ao atingir um GSO?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Que ele continue optando pela marca GSK no perfil de paciente que já prescreve",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Que concorde com os dados científicos que apresentei sobre o produto GSK",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Que mude o comportamento, se comprometendo a prescrever a marca GSK no perfil de paciente discutido",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Quais são as etapas da avaliação CLEAR?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Autoavaliação + Avaliação do Gestor + Avaliação Conjunta",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Avaliação do Gestor + Plano de Desenvolvimento",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Autoavaliação + Avaliação do Gestor + Avaliação Conjunta + Plano de Desenvolvimento",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Como classificar no CLEAR uma subcompetência em que o representante realiza com QUALIDADE, FREQUÊNCIA e AUTONOMIA?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Proficiente",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Insuficiente",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Avançado",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "O Uniccampo tem por finalidade:",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Ser uma ferramenta continua de capacitação, auto-estudo, comunicação e avaliação ",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Ser uma ferramenta de avaliação ",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Ser uma ferramenta de comunicação e avaliação ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "O que é o Free Text?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "É um texto padrão que colocamos para fechar o pós visita.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "É o registro qualitativo das interações entre o representante e o médico, garantindo o histórico  sequencial  dessas interações.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "É um registro com solicitações do médico, por exemplo estudos clínicos, apoios de congressos, utilização de produto on label e off label.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais são os benefícios do Free Text?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Otimização do tempo na pré visita, permite a continuidade nas estratégias de cada visita criando um histórico e mitigação de rupturas no relacionamento entre rep e HCP. ",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Relatar em tempo real as solicitações do médico, exemplo: amostras grátis, estudos clínicos e apoio para congressos.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Poder anotar os gostos pessoais do médico.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância do Plano de Território do REP?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Nos permite avaliar o cenário, a performance das marcas e registrar as ações que pretendo realizar para mover o resultado. ",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "É uma demanda da global que precisamos cumprir",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Registrar os eventos que vou realizar ao longo do ano",
+            "isCorrect": false
+          }
+        ]
+      }
+    ],
+    "comercial": [
+      {
+        "title": "Como realizo a exclusão de HCPs e HCOs no Veeva?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Veeva Online",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Módulo de Planejamento",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Minhas Contas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual tipo de registo de evento deve ser criado para um evento sem speaker?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Evento Pai",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Evento GSK",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Evento Simples",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "O QR Code ficará disponível por quanto tempo após a finalização do evento?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não há um tempo determinado",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Um período de até 24h",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Um período de até 12h",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "No tipo de registro Evento GSK, qual é o status que permite a realização do evento?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Aprovado",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Solicitado",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Confirmado",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "O aprovador do evento deve ser incluído em Membros da equipe?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Sim",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Depende do tipo de registro do evento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual procedimento para atualização do consentimento para e-mails e whatsapp?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "1- Não é necessário registrar o opt-out do e-mail e whatsapp antigos ",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "1- Registrar o opt-out do e-mail e whatsapp antigos ",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "1- Cadastrar novo e-mail e whatsapp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "A assinatura do HCP é obrigatória para captura de consentimento em visitas presenciais?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Sim",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "O Rep pode digitar o CRM do HCP no campo id de consentimento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Em caso de carro GSK danificado, posso usar veículo próprio para trabalhar?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não, devo comunicar o setor de frota que providenciará o conserto e um carro provisório.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Sim, até que o carro da GSK esteja pronto para uso",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Sim, pelo período máximo de 1 mês",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais dias posso abastecer meu veículo de trabalho?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Segunda a sexta, com exceção de feriados nacionais.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Qualquer dia",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Somente finais de semana e feriado.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quando o PMT precisa ser revisado?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Trimestralmente",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "No mínimo uma vez ao ano, quando houver mudança de dados cadastrais, ajuste de roteiros ou em mudança de território do colaborador",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Mensalmente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância de comunicar o novo instagram GSK para os HCPs?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "O novo instagram ajudará somente no fortalecimento do novo visual e logo da GSK.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Por ser uma conta no Instagram, os conteúdos publicados não terão nenhuma relevância estratégica para a classe médica.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "A nova conta trará informações de lançamentos e outras ações GSK que ajudarão na construção de uma marca mais forte junto a classe médica.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância de se utilizar diferentes canais para o reforço da mensagem?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "O uso de diferentes canais permite aumentar somente a sensação de atendimento ao cliente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Tanto a visita, email e o whatsapp possuem a mesma função no relacionamento com o médico e possuem estratégias de uso exatamente iguais com cada cliente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "O uso de diferentes canais permite aumentar a frequência da mensagem e a criação de um sentimento de relacionamento maior da empresa com seu cliente.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância de planejar uma cadência apropriada para o envio de mensagens?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "A cadência dos impactos não é importante visto que todo o segmento que dispara mensagens promocionais consegue ganhar a atenção do cliente. Aquele que consegue impactar mais vezes e mais rápido, sai na frente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Independente das mensagens, a cadência deve ser sempre a mesma para acostumar o cliente aos impactos GSK.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Uma boa cadência no envio das mensagens respeita o timing dos clientes, fazendo com que eles se sintam confortáveis em receber e interagir com a empresa, sem ser abusivo ou inconveniente.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Você sabe o que é e o que pode ser encontrado no portal Conectados?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "O Conectados é um site exclusivo para a transmissão de eventos. ",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": " O Conectados é um aplicativo de rotas de visitação, para apoio do representante. ",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "O Conectados é um portal de comunicação da GSK com os HCPs, onde eles encontram diversos tipos de conteúdo sobre produtos, áreas terapêuticas, em diferentes formatos, como vídeos e artigos científicos, além de poder participar de eventos virtuais e fazer solicitações de amostras grátis.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância de se obter consentimento para manter contato com o HCP?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Garantir que o HCP fique feliz na relação com a GSK, assegurando a satisfação do cliente.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Além de estar previsto na Lei de Proteção de Dados Pessoais (LGPD), o consentimento é a melhor forma de entendermos o quanto o HCP está disposto e aberto aos nossos contatos e conteúdos. É uma forma educada de construir um bom relacionamento e duradouro com os nossos clientes.",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "O consentimento é importante para que o representante fale sobre qualquer assunto com o HCP e compartilhe arquivos de diferentes naturezas e extensões. ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "O que é LGPD?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "A Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018, é a legislação brasileira que regula as atividades de tratamento de dados pessoais. Foi promulgada e entrou em vigor em 2020 para proteger os direitos fundamentais de liberdade e de privacidade.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "A sigla LGPD significa Legislação Guardada por Políticas Direcionadas, Lei nº 3.727/2015, que tem como objetivo de armazenar todas as leis e políticas em um único local. ",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "A Lei Geral de Proteção de Dados Pessoais é a legislação brasileira que regula as atividades de tratamento de dados pessoais, que ainda não entrou em vigor.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "O que não pode ser dito na conversa de WhatsApp com o HCP?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "É proibido abordar sobre drogas ilícitas, suborno e anti-propina, indicações off Label, compartilhar informações confidenciais PIIS, fazer promoção Indevida e ter uma conduta inadequada",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Só não podemos falar sobre eventos adversos dos medicamentos.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": " É proibido abordar sobre o Viver Mais e distribuir links para conteúdos nos portais GSKpro e Conectados.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Como é possível saber se o consentimento do HCP em receber comunicações por e-mail ou telefone foi cadastrado corretamente no Veeva? ",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Após cadastrar o e-mail ou telefone do HCP no Veeva, em até 72h o contato do médico irá aparecer na plataforma e o Rep não precisa fazer mais nada.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "O processo correto é cadastrar o e-mail ou telefone do HCP no Veeva, marcar o termo de consentimento e solicitar a assinatura do HCP.",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": " Após cadastrar o e-mail ou telefone do HCP no Veeva, em até 72h o contato do médico irá aparecer na plataforma e o Rep precisa aguardar a área jurídica da empresa entrar em contato com o médico para solicitar o consentimento duplo.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a importância estratégica de se usar o e-mail na comunicação com o HCP?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Reforçar a mensagem apresentada, presença de marca, estreitar o relacionamento com o HCP e mapeamento do senso de interesse do painel visitado.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Contabilizar no Po3 e convidar os HCPs para eventos. ",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Fazer comunicados urgentes e alinhar dias de visitação. ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais os possíveis riscos de enviar uma mensagem sem ter o consentimento do médico ou enviar mensagens através do celular pessoal?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Não há riscos, uma vez que as mensagens não são monitoradas pela GSK.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "O número de telefone pode ser cancelado pela operadora e o endereço de email pode ser bloqueado pela plataforma Veeva.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Estaríamos agindo em não conformidade com a LGPD e portanto, expondo a GSK à penalidades, multas e processos jurídicos, além de agir contra as normas de conduta estabelecidas pela GSK.",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual o objetivo do PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Enviar e-mails e levar médicos a eventos",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Medir o sucesso da estratégia de engajamento omnichannel da Força de Vendas junto aos médicos A e B para as marcas prioritárias",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Medir engajamento de médicos de baixo potencial",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual o período de apuração do PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Trimestre Móvel",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Mensal",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Anual",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual das opções não é um critério para o PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Médico A/B planejado todos os meses do MQT",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Impacto ao médico A/B por 3 canais no trimestre móvel (F2F/Engage + Email 1:1 + Eventos/Webinars)",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Ao menos 2 impactos por mês (por 1 ou mais canais) a médicos de baixo potencial",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual status deve ter o e-mail para que conte para o PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Entregue (independente de ter sido aberto)",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Aberto",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Recusado",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Contam para o PO3 Eventos realizados pela FV ou webinars, onde o HCP:",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "a) Informou que compareceria",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "a) foi incluído na lista de participantes; b) teve assinatura capturada via ipad ou QR Code; c) o produto consta como primário ou secundário; d) Independente de quem criou ou participou do evento (foco no HCP)",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "a) Foi convidado pelo REP que criou o evento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Para atingir o Power of 3, o REP deverá a cada mês",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "a) Visitar; b) enviar e-mails; c) levar médicos de baixo potencial a eventos",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "a) Planejar os HCPs AB para marcas prioritárias; b) Realizar ao menos 1 visita F2F/Engage aos HCPs AB; c) Entregar ao menos 1 Email 1:1 aos HCPs AB;d) Cobrir 1/3 dos HCPs AB com eventos (diferentes a cada mês)",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "a)Visitar;b) enviar e-mails a todos os médicos do painel planejado",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "São gatilhos para ser elegível a receber remuneração variável:",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "a) Atingir o objetivo mensal;b) Certificação de compliance",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "a) Atingir o objetivo mensal;b) Certificação de conhecimento",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "a) Certificação de Compliance;b) Certificação de Conhecimento",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Quantas tentativas de cada certificação (compliance e conhecimento), exigidas como gatilho para pagamento de remuneração variável, podem ser realizadas pelo colaborador?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "1",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "3",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "2",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Quantas tentativas das certificações podem ser realizadas?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "1",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "3",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "2",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "Qual o teto da curva de atingimento para pagamento de RV?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "250%",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "150%",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "100%",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais são os elementos do Ojbetivo Comercial da Visita (OCV)?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Ação esperada do médico + perfil de paciente ",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Ação esperada do médico + Perfil de paciente + Produto Gsk ao invés da concorrência",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Perfil de paciente + Produto Gsk ao invés do concorrente ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a sigla da técnica que usamos para contornar objeções?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "RACT",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "RARC",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "RARCT",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "title": "O que é market-share?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "É o resultado das vendas",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "É participação no mercado em relação a outros produtos/ concorrentes",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "É a quantidade de unidades vendidas de produtos GSK",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Sell-in é:",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Resultado da venda B2B",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Resultado da venda B2C",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Resultado da venda B2B2C",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Sell-out é:?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Comercialização direta no cliente final",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Compra de produtos da indústria",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Compra de produtos no atacado",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais são as etapas da avaliação CLEAR?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Autoavaliação + Avaliação do Gestor + Avaliação Conjunta + Plano de Desenvolvimento",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Relatar em tempo real as solicitações do médico, exemplo: amostras grátis, estudos clínicos e apoio para congressos.",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Poder anotar os gostos pessoais do médico.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Como classificar no CLEAR uma subcompetência em que o representante realiza com QUALIDADE, FREQUÊNCIA e AUTONOMIA?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Insuficiente",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Proficiente",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Avançado",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,17 +1,17 @@
-import { RegulamentoView } from "@/styles/layouts/Regulamento/RegulamentoView";
+import { TenteNovamenteView } from "@/styles/layouts/TenteNovamente/TenteNovamenteView";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-export default function Agradecimento() {
+export default function TenteNovamente() {
   const router = useRouter();
 
   return (
-    <RegulamentoView>
+    <TenteNovamenteView>
       <img
         src="/grupomascara3.png"
         alt="Minha Figura"
         className="Imagem5"
-        style={{ marginBottom: "500px" }}
+        style={{ marginBottom: "844px", marginRight:"-98px" }}
       />
 
       <Image
@@ -44,11 +44,10 @@ export default function Agradecimento() {
         }}
       >
         <h2>Comercial</h2>
-        <h1 style={{width: '395px', marginTop:'-4px'}}>
-          Parabéns você acertou todas as perguntas!
+        <h1>
+        Parabéns você acertou todas as perguntas!
         </h1>
-        {/* <button onClick={() => router.push('/selecao-grupo')}>CONTINUAR</button> */}
       </div>
-    </RegulamentoView>
+    </TenteNovamenteView>
   );
 }

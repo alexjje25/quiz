@@ -58,13 +58,11 @@ export const PerguntasView = styled.main`
 
   h1 {
     font-family: Poppins;
-    /* position: absolute; */
-    /* UI Properties */
-       letter-spacing: 0px;
+    letter-spacing: 0px;
     color: #72635D;
     opacity: 1;
-    width: 678px;
-    font-size: 22px;
+    width: 842px;
+    font-size: 25px;
     margin-top: -4px;
   }
 
@@ -75,7 +73,7 @@ export const PerguntasView = styled.main`
     color: #17717d;
     opacity: 1;
     text-align: center;
-    font-size: 16px;
+    font-size: 21px;
     padding-left: 1px;
     
   }
@@ -85,26 +83,28 @@ export const PerguntasView = styled.main`
     display: flex;
     flex-direction: column;
     align-items: self-start;
+    padding-right: 290px;
   }
   .content{
-    width: 100%;
+    width: 92%;
   }
+
   .questionA{
     display: flex;
     justify-content: space-between;
-    line-height: 107px;
-    height: 107px;
+    
+    height: 124px;
     cursor: pointer;
     margin-top: 13px;
     
   }
   .question{
     background: #F0EFED;
-    width: 90%;
+    width: 92%;
     border-radius: 23px;
   }
   h4{
-    font-size: 45px;
+    font-size: 57px;
     font-family: sans-serif;
     font-weight: 900;
     color: #17717D;
@@ -114,6 +114,13 @@ export const PerguntasView = styled.main`
 
   .css-19vcw4s-MuiStack-root{
     width: 149% !important;
+  }
+
+  .wrapperQuestion1{
+    width: 663px;
+    height: 10px;
+    padding-top: 37px;
+    padding: 39px;
   }
 
 

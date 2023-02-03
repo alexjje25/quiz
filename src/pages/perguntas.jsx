@@ -16,6 +16,8 @@ export default function Regulamento() {
   const [index, setIndex] = useState(0);
   const [questions, setQuestions] = useState([]);
 
+
+
   const time = new Date();
   time.setSeconds(time.getSeconds() + 60); // 10 minutes timer
 
@@ -51,12 +53,18 @@ export default function Regulamento() {
       axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
         correctAnswersCount: isCorrectAux
       })
-      if(isCorrectAux >= 4) {
-        router.push('/agradecimento');
-      }
-      if(isCorrectAux < 4) {
-        router.push('/')
-      }
+      setTimeout(() => {
+        if(isCorrectAux >= 4) {
+          
+          router.push('/agradecimento');
+        }
+        if(isCorrectAux < 4) {
+          $('h1').css('display', 'none');
+          router.push('/tente-novamente')
+          
+        }
+      }, 3000);
+      
       // router.push('/')
     }
     setClicked(true)
@@ -64,6 +72,7 @@ export default function Regulamento() {
       setClicked(false);
       setIndex(index + 1);
     }, 1000);
+
   };
 
   const fetch = async () => {
@@ -85,28 +94,8 @@ export default function Regulamento() {
         className="Imagem5"
         style={{ marginBottom: "844px", marginRight: "-98px" }}
       />
-      <p
-        style={{
-          marginBottom: "844px",
-          marginRight: "-98px",
-          position: "absolute",
-          color: "black",
-          zIndex: "999",
-        }}
-      >
-        <MyTimer expiryTimestamp={time} onExpire={() => {
-          axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
-            correctAnswersCount: isCorrectAux
-          })
-          if(isCorrectAux >= 4) {
-            router.push('/agradecimento');
-          }
-          if(isCorrectAux < 4) {
-            router.push('/')
-          }
-          // router.push('/')
-        }}/>
-      </p>
+      
+      
       <Image
         src="/uniao1.png"
         alt={"imagem de fundo"}
@@ -130,11 +119,49 @@ export default function Regulamento() {
       <div className="TEEEE">
         <CustomizedSteppers index={index + 1} style={{ width: "141%" }} />
       </div>
-
+      <div style={{position:"absolute", marginTop:"-878px", paddingLeft:"1020px"}}>
+      <img
+        src="/clock.png"
+        alt="Minha Figura"
+        className="Imagem6"
+        style={{ position: "absolute",
+        color: "black",
+        zIndex: "999",
+        width:"82px",
+        paddingLeft:"61px",
+        top:"32px",
+       }}
+      />
+      <p
+        style={{
+          marginBottom: "844px",
+          position: "absolute",
+          color: "black",
+          zIndex: "999",fontSize:"41px",
+          top:"-13px"
+        }}
+      >
+        
+        
+      
+        {/* <MyTimer expiryTimestamp={time} onExpire={() => {
+          axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
+            correctAnswersCount: isCorrectAux
+          })
+          if(isCorrectAux >= 4) {
+            router.push('/agradecimento');
+          }
+          if(isCorrectAux < 4) {
+            router.push('/')
+          }
+          // router.push('/')
+        }}/> */}
+      </p>
+      </div>
       <div
         style={{
           position: "absolute",
-          width: "53%",
+          width: "80%",
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
@@ -143,11 +170,11 @@ export default function Regulamento() {
       >
         <div className="main" style={{ marginTop: '0rem' }}>
           <h2>{questions[index]?.area}</h2>
-          <h1>
+          <h1 id="h1">
             {index + 1} - {questions[index]?.title}
           </h1>
         </div>
-        <div className="content" style={{ paddingLeft: "113px" }}>
+        <div className="content" style={{ paddingRight: "17px", marginTop:'30px' }}>
           {questions[index]?.answers?.map((answer) => (
             <div
               key={answer}
@@ -161,7 +188,7 @@ export default function Regulamento() {
                     className="respost"
                     style={{
                       position: "absolute",
-                      marginLeft: "215px",
+                      marginLeft: "390px",
                       transform: "translate(13rem, 1.5rem)",
                       backgroundColor: "#fff",
                       height: "45px",
@@ -182,7 +209,7 @@ export default function Regulamento() {
                     className="respost"
                     style={{
                       position: "absolute",
-                      marginLeft: "215px",
+                      marginLeft: "390px",
                       transform: "translate(13rem, 1.5rem)",
                       backgroundColor: "#fff",
                       height: "45px",
@@ -210,7 +237,10 @@ export default function Regulamento() {
                     : "",
                 }}
               >
-                {answer.label}
+                <div className="wrapperQuestion1">
+                  <span style={{color:"#72635D"}}>{answer.label}</span>
+                </div>
+                
               </div>
             </div>
           ))}
@@ -228,7 +258,7 @@ function MyTimer({ expiryTimestamp, onExpire }) {
 
   return (
     <div style={{textAlign: 'center'}}>
-      <div style={{fontSize: '16px'}}>
+      <div style={{fontSize: '40px'}}>
         <span>{minutes}</span>:<span>{seconds}</span>
       </div>
     </div>

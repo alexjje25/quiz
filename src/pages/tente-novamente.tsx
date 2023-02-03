@@ -1,12 +1,12 @@
-import { RegulamentoView } from "@/styles/layouts/Regulamento/RegulamentoView";
+import { TenteNovamenteView } from "@/styles/layouts/TenteNovamente/TenteNovamenteView";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-export default function Regulamento() {
+export default function TenteNovamente() {
   const router = useRouter();
 
   return (
-    <RegulamentoView>
+    <TenteNovamenteView>
       <img
         src="/grupomascara3.png"
         alt="Minha Figura"
@@ -43,12 +43,11 @@ export default function Regulamento() {
           paddingLeft:"10px",
         }}
       >
-        <h2>Regulamento:</h2>
+        <h2>Comercial</h2>
         <h1>
-        O game consiste em o participante acertar as 4 perguntas selecionadas pelo sistema aleatoriamente.
+        Tente novamente, você está quase lá.
         </h1>
-        <button onClick={() => router.push('/selecao-grupo')}>CONTINUAR</button>
       </div>
-    </RegulamentoView>
+    </TenteNovamenteView>
   );
 }
