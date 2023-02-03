@@ -60,9 +60,7 @@ export default function Regulamento() {
 
   const fetch = async () => {
     const { data } = await axios.get('http://localhost:3001/questions')
-    console.log(data[team ?? localStorage.getItem('team')])
-    setQuestions(shuffleArray(data[team ?? localStorage.getItem('team')]).slice(0, 4))
-    console.log(shuffleArray(data[team ?? localStorage.getItem('team')]).slice(0, 4))
+    setQuestions(shuffleArray(data[team ?? localStorage.getItem('team')])?.slice(0, 4))
   }
   useEffect(() => {
     fetch()
