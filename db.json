@@ -189,7 +189,6 @@
       "correctAnswersCount": 1
     },
     {
-<<<<<<< HEAD
       "email": "awdadw@dawda",
       "name": "dawdad",
       "team": "demanda",
@@ -296,13 +295,13 @@
       "team": "demanda",
       "id": 44,
       "correctAnswersCount": 0
-=======
-      "email": "new6@",
-      "name": "new6",
+    },
+    {
+      "email": "ss@asfs",
+      "name": "gggg",
       "team": "demanda",
-      "id": 10,
+      "id": 45,
       "correctAnswersCount": 2
->>>>>>> 77f072cc1288e06ae1bcc08f19ef7b2cab82c47c
     }
   ],
   "questions": {

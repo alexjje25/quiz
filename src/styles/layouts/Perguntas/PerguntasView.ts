@@ -93,7 +93,7 @@ export const PerguntasView = styled.main`
     display: flex;
     justify-content: space-between;
     
-    height: 124px;
+    height: 145px;
     cursor: pointer;
     margin-top: 13px;
     
@@ -102,6 +102,7 @@ export const PerguntasView = styled.main`
     background: #F0EFED;
     width: 92%;
     border-radius: 23px;
+    height: 143px;
   }
   h4{
     font-size: 57px;
@@ -117,10 +118,11 @@ export const PerguntasView = styled.main`
   }
 
   .wrapperQuestion1{
-    width: 663px;
+    width: 1097px;
     height: 10px;
     padding-top: 37px;
-    padding: 39px;
+    margin-top: -20px;
+    padding: 41px;
   }
 
 
