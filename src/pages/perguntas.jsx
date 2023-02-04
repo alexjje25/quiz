@@ -143,7 +143,7 @@ export default function Regulamento() {
       >
         
         
-{/*       
+
         <MyTimer expiryTimestamp={time} onExpire={() => {
           axios.patch(`http://localhost:3001/users/${localStorage.getItem('id:quiz')}`, {
             correctAnswersCount: isCorrectAux
@@ -152,10 +152,10 @@ export default function Regulamento() {
             router.push('/agradecimento');
           }
           if(isCorrectAux < 4) {
-            router.push('/')
+            router.push('/tente-novamente')
           }
           // router.push('/')
-        }}/>  */}
+        }}/> 
       </p>
       </div>
       <div
