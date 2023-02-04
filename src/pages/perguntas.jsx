@@ -128,7 +128,7 @@ export default function Regulamento() {
         }}
       />
       <div className="TEEEE">
-        <CustomizedSteppers index={index + 1} style={{ width: "141%" }} />
+        <CustomizedSteppers index={index} style={{ width: "141%" }} />
       </div>
 
       <div
