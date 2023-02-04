@@ -1,6 +1,17 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: quizttf;
+    src: url(./fonte/Akzidenz-Grotesk-Roman-Bold.ttf);
+  }
+
+  * {
+    font-family: quizttf;
+  }
+  h1 {
+    font-family: quizttf!important;
+  }
   body {
     margin: 0;
     padding: 0;
