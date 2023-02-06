@@ -81,10 +81,11 @@ export const ColetaDadosView = styled.main`
 
 
   .input{
-    height: 61px;
-    width:76%;
+    height: 22px;
+    width:91%;
     background: #F0EFED;
     border: none;
     border-radius: 12px;
+    padding: 24px;
   }
 `;
