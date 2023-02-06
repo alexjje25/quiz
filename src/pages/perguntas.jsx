@@ -75,7 +75,87 @@ export default function Regulamento() {
 
   const fetch = async () => {
     const { data } = await axios.get('http://localhost:3001/questions')
-    let opc = [], dig = [], sfe = [], treinamento = []
+    let opc = [{
+        "title": "Quais dias posso abastecer meu veículo de trabalho?",
+        "area": "Operações comerciais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Segunda a sexta, com exceção de feriados nacionais.",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Qualquer dia",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "Somente finais de semana e feriado.",
+            "isCorrect": false
+          }
+        ]
+      }], dig = [      {
+        "title": "Qual a importância de comunicar o novo instagram GSK para os HCPs?",
+        "area": "Digitais",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "O novo instagram ajudará somente no fortalecimento do novo visual e logo da GSK.",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Por ser uma conta no Instagram, os conteúdos publicados não terão nenhuma relevância estratégica para a classe médica.",
+            "isCorrect": false
+          },
+          {
+            "letter": "C",
+            "label": "A nova conta trará informações de lançamentos e outras ações GSK que ajudarão na construção de uma marca mais forte junto a classe médica.",
+            "isCorrect": true
+          }
+        ]
+      },], sfe = [      {
+        "title": "Qual o objetivo do PO3?",
+        "area": "SFE",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Enviar e-mails e levar médicos a eventos",
+            "isCorrect": true
+          },
+          {
+            "letter": "B",
+            "label": "Medir o sucesso da estratégia de engajamento omnichannel da Força de Vendas junto aos médicos A e B para as marcas prioritárias",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Medir engajamento de médicos de baixo potencial",
+            "isCorrect": false
+          }
+        ]
+      },], treinamento = [      {
+        "title": "Quais são os elementos do Ojbetivo Comercial da Visita (OCV)?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Ação esperada do médico + perfil de paciente",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Ação esperada do médico + Perfil de paciente + Produto Gsk ao invés da concorrência",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Perfil de paciente + Produto Gsk ao invés do concorrente",
+            "isCorrect": false
+          }
+        ]
+      },]
     data[team ?? localStorage.getItem('team')]?.map((value) => {
       if (value.area === 'Treinamento') treinamento = [ ...treinamento, value ]
       if (value.area === 'SFE') sfe = [ ...sfe, value ]
