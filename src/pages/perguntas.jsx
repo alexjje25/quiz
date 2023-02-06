@@ -87,7 +87,7 @@ export default function Regulamento() {
     sfe = shuffleArray(sfe)
     treinamento = shuffleArray(treinamento)
 
-    setQuestions(shuffleArray([...opc, ...dig, ...sfe, ...treinamento])?.slice(0, 4))
+    setQuestions(shuffleArray([opc[0], dig[0], sfe[0], treinamento[0]]))
   }
   useEffect(() => {
     fetch()
