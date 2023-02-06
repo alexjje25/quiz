@@ -46,6 +46,7 @@ export const SelecaoGrupoView = styled.main`
     border-radius: 6px;
     cursor: pointer;
     letter-spacing: 4px;
+    font-family: Poppins;
 }
 
   h1 {

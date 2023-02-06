@@ -1,9 +1,16 @@
 import { TenteNovamenteView } from "@/styles/layouts/TenteNovamente/TenteNovamenteView";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function TenteNovamente() {
   const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push('/')
+    }, 4000);
+  }, [])
 
   return (
     <TenteNovamenteView>
@@ -45,7 +52,7 @@ export default function TenteNovamente() {
       >
         <h2>Comercial</h2>
         <h1>
-        Tente novamente, você está quase lá.
+          Tente novamente, você está quase lá.
         </h1>
       </div>
     </TenteNovamenteView>

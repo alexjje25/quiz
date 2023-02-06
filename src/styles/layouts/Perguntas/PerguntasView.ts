@@ -84,6 +84,7 @@ export const PerguntasView = styled.main`
     flex-direction: column;
     align-items: self-start;
     padding-right: 290px;
+    padding-top: 58px;
   }
   .content{
     width: 92%;

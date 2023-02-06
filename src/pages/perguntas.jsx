@@ -65,7 +65,7 @@ export default function Regulamento() {
         }
       }, 3000);
       
-      // router.push('/')
+       router.push('/')
     }
     setClicked(true)
     setTimeout(() => {
@@ -154,7 +154,7 @@ export default function Regulamento() {
           if(isCorrectAux < 4) {
             router.push('/tente-novamente')
           }
-          // router.push('/')
+          router.push('/')
         }}/> 
       </p>
       </div>
