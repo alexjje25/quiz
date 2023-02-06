@@ -8,7 +8,7 @@ export default function TenteNovamente() {
 
   useEffect(() => {
     setTimeout(() => {
-      router.push('/')
+      router.push('/parceiros')
     }, 4000);
   }, [])
 

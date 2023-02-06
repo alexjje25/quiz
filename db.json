@@ -304,37 +304,64 @@
       "correctAnswersCount": 0
     },
     {
-      "email": "dwada@dawdad",
-      "name": "dadadwadad",
+      "email": "alex@teste.com",
+      "name": "alex",
       "team": "demanda",
       "id": 46
     },
     {
-      "email": "sss@ss",
-      "name": "sss",
+      "email": "dwada@dawd",
+      "name": "adadadwadwa",
       "team": "demanda",
-      "id": 47,
+      "id": 47
+    },
+    {
+      "email": "dadaw@dawda",
+      "name": "dwadadwad",
+      "team": "demanda",
+      "id": 48,
       "correctAnswersCount": 0
     },
     {
-      "email": "adwadaw@dawdwad",
-      "name": "dawdaddw",
+      "email": "ss@ss",
+      "name": "ds",
       "team": "demanda",
-      "id": 48,
+      "id": 49,
+      "correctAnswersCount": 2
+    },
+    {
+      "email": "DWADAD@DAWDA",
+      "name": "SADWDA",
+      "team": "demanda",
+      "id": 50,
       "correctAnswersCount": 1
     },
     {
-      "email": "adwadawd@dawdad",
-      "name": "adadadw",
+      "email": "AWDDWA@DAWDA",
+      "name": "DADWAD",
       "team": "demanda",
-      "id": 49,
+      "id": 51,
+      "correctAnswersCount": 2
+    },
+    {
+      "email": "DWADWAD@DAWDA",
+      "name": "DAWDAD",
+      "team": "demanda",
+      "id": 52,
+      "correctAnswersCount": 1
+    },
+    {
+      "email": "dawda@dawda",
+      "name": "dawda",
+      "team": "demanda",
+      "id": 53,
       "correctAnswersCount": 0
     },
     {
-      "email": "wadwa@dawda",
-      "name": "dawdadad",
+      "email": "awdadwad@dawda",
+      "name": "wada",
       "team": "demanda",
-      "id": 50,
+      "id": 54,
       "correctAnswersCount": 0
     }
   ],
@@ -992,22 +1019,64 @@
         ]
       },
       {
-        "title": "Qual comportamento do médico esperamos ao atingir um GSO?",
+        "title": "Quais são os elementos do Ojbetivo Comercial da Visita (OCV)?",
         "area": "Treinamento",
         "answers": [
           {
             "letter": "A",
-            "label": "Que ele continue optando pela marca GSK no perfil de paciente que já prescreve",
+            "label": "Ação esperada do médico + perfil de paciente",
             "isCorrect": false
           },
           {
             "letter": "B",
-            "label": "Que concorde com os dados científicos que apresentei sobre o produto GSK",
+            "label": "Ação esperada do médico + Perfil de paciente + Produto Gsk ao invés da concorrência",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Perfil de paciente + Produto Gsk ao invés do concorrente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Quais são os elementos do Ojbetivo Comercial da Visita (OCV)?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "Ação esperada do médico + perfil de paciente",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "Ação esperada do médico + Perfil de paciente + Produto Gsk ao invés da concorrência",
+            "isCorrect": true
+          },
+          {
+            "letter": "C",
+            "label": "Perfil de paciente + Produto Gsk ao invés do concorrente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "title": "Qual a sigla da técnica que usamos para contornar objeções?",
+        "area": "Treinamento",
+        "answers": [
+          {
+            "letter": "A",
+            "label": "RACT",
+            "isCorrect": false
+          },
+          {
+            "letter": "B",
+            "label": "RARC",
             "isCorrect": false
           },
           {
             "letter": "C",
-            "label": "Que mude o comportamento, se comprometendo a prescrever a marca GSK no perfil de paciente discutido",
+            "label": "RARCT",
             "isCorrect": true
           }
         ]
@@ -1272,17 +1341,17 @@
         "answers": [
           {
             "letter": "A",
-            "label": "1- Não é necessário registrar o opt-out do e-mail e whatsapp antigos ",
+            "label": "1- Não é necessário registrar o opt-out do e-mail e whatsapp antigos 2- Cadastrar novo e-mail e whatsapp 3- Capturar novo opt-in",
             "isCorrect": false
           },
           {
             "letter": "B",
-            "label": "1- Registrar o opt-out do e-mail e whatsapp antigos ",
+            "label": "1- Registrar o opt-out do e-mail e whatsapp antigos 2- Cadastrar novo e-mail e whatsapp 3- Capturar novo opt-in",
             "isCorrect": true
           },
           {
             "letter": "C",
-            "label": "1- Cadastrar novo e-mail e whatsapp",
+            "label": "1- Cadastrar novo e-mail e whatsapp 2- Capturar novo opt-in 3- Registrar o opt-out do e-mail e whatsapp antigos ",
             "isCorrect": false
           }
         ]
