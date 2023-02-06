@@ -64,8 +64,6 @@ export default function Regulamento() {
           
         }
       }, 3000);
-      
-      //  router.push('/')
     }
     setClicked(true)
     setTimeout(() => {
@@ -77,8 +75,19 @@ export default function Regulamento() {
 
   const fetch = async () => {
     const { data } = await axios.get('http://localhost:3001/questions')
-    setQuestions(shuffleArray(data[team ?? localStorage.getItem('team')])?.slice(0, 4))
-    console.log(questions)
+    let opc = [], dig = [], sfe = [], treinamento = []
+    data[team ?? localStorage.getItem('team')]?.map((value) => {
+      if (value.area === 'Treinamento') treinamento = [ ...treinamento, value ]
+      if (value.area === 'SFE') sfe = [ ...sfe, value ]
+      if (value.area === 'Digitais') dig = [ ...dig, value ]
+      if (value.area === 'Operações comerciais') opc = [ ...opc, value ]
+    })
+    opc = shuffleArray(opc)
+    dig = shuffleArray(dig)
+    sfe = shuffleArray(sfe)
+    treinamento = shuffleArray(treinamento)
+
+    setQuestions(shuffleArray([...opc, ...dig, ...sfe, ...treinamento])?.slice(0, 4))
   }
   useEffect(() => {
     fetch()
